@@ -5,7 +5,7 @@
 // comprobar los permisos.
 //
 // Flujo de setmenu: se abre un menú con botones (como el de play) con:
-//   • los 7 diseños
+//   • los 12 diseños
 //   • imagen/video para TODOS los menús o para uno específico
 //   • nombre del bot (marca que sale en menús y descargas)
 //   • foto de perfil
@@ -808,7 +808,7 @@ export async function abrirSetmenu(msg, conn, { puedeUsar, args = [] } = {}) {
 
   const cabecera =
     `🎨 *PERSONALIZACIÓN DE ${marca.toUpperCase()}*\n\n` +
-    `🎨 Diseño actual: *${d?.emoji || ""} ${d?.nombre || "Clásico"}*\n` +
+    `🎨 Diseño actual: *${d?.emoji || ""} ${d?.nombre || "Grimorio"}*\n` +
     `✏️ Nombre actual: *${marca}*\n\n` +
     `Elige qué quieres cambiar 👇\n\n` +
     `💡 *¿No se te abre la lista?* Responde a este mensaje con el número:\n\n` +
@@ -833,7 +833,7 @@ export async function abrirSetmenu(msg, conn, { puedeUsar, args = [] } = {}) {
       chatId,
       {
         text: cabecera,
-        footer: `❦ ${marca} ❦`,
+        footer: `☘️ ${marca} ☘️`,
         buttons: lista,
         headerType: 1
       },

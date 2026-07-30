@@ -128,7 +128,7 @@ function isOwnerMsg(msg) {
 }
 
 function makeApiKey() {
-  const rawKey = "suki_" + crypto.randomBytes(32).toString("hex");
+  const rawKey = "bclover_" + crypto.randomBytes(32).toString("hex");
   const id = crypto.randomBytes(5).toString("hex");
   const hash = sha256(rawKey);
 
@@ -323,7 +323,7 @@ Relay cargado: ${relay.relayLoaded ? "✅ sí" : "❌ no"}
 Registro enviado: ${relay.registerOk ? "✅ sí" : "⚠️ pendiente"}
 Poll ejecutado: ${relay.pollOk ? "✅ sí" : "⚠️ pendiente"}
 
-Si el relay no está cargado, reinicia Suki o asegúrate de que \`startWebServer(sock)\` se esté ejecutando.`,
+Si el relay no está cargado, reinicia Black Clover o asegúrate de que \`startWebServer(sock)\` se esté ejecutando.`,
       msg
     );
   }

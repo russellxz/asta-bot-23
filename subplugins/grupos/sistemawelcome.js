@@ -464,7 +464,7 @@ async function handleGroupParticipantsUpdate(conn, update, recentEvents) {
             perfilURL,
             "https://cdn.russellxz.click/7177383b.jpg",
             "https://cdn.russellxz.click/e72cc417.jpeg",
-            `👋 ${mention}\n\n${mensaje}\n\n🤖 Suki Subbots`,
+            `👋 ${mention}\n\n${mensaje}\n\n🤖 Black Clover Subbots`,
             [mentionId]
           );
         }
@@ -492,7 +492,7 @@ async function handleGroupParticipantsUpdate(conn, update, recentEvents) {
             perfilURL,
             "https://cdn.russellxz.click/bc842c44.jpg",
             "https://cdn.russellxz.click/7177383b.jpg",
-            `👋 ${mention}\n\n${mensaje}\n\n🤖 Suki Subbots`,
+            `👋 ${mention}\n\n${mensaje}\n\n🤖 Black Clover Subbots`,
             [mentionId]
           );
         }

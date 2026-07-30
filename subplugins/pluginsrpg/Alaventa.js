@@ -13,7 +13,7 @@ const handler = async (msg, { conn }) => {
 
   if (db.personajes_venta.length === 0) {
     return conn.sendMessage(chatId, {
-      image: { url: "https://cdn.russellxz.click/7451040a.jpeg" },
+      image: { url: "https://cdn.russellxz.click/657f529c.jpg" },
       caption: "❌ Actualmente no hay personajes a la venta en el mercado.",
       quoted: msg
     });
@@ -36,7 +36,7 @@ const handler = async (msg, { conn }) => {
   });
 
   await conn.sendMessage(chatId, {
-    image: { url: "https://cdn.russellxz.click/7451040a.jpeg" },
+    image: { url: "https://cdn.russellxz.click/657f529c.jpg" },
     caption: texto,
     quoted: msg
   });

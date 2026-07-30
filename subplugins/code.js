@@ -3,7 +3,7 @@
 import { handleCodeCommand } from "../subbots.js";
 
 const handler = async (msg, { conn, args }) => {
-  await handleCodeCommand(msg, { conn, args, botName: "Suki Subbots" });
+  await handleCodeCommand(msg, { conn, args, botName: "Black Clover Subbots" });
 };
 
 handler.command = ["code", "jadibot", "serbot", "sercode", "qr"];

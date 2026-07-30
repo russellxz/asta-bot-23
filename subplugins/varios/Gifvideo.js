@@ -62,7 +62,7 @@ const handler = async (msg, { conn, command, wa }) => {
       gifPlayback: true,
       // mantener mimetype si viene del doc, ayuda a algunos clientes
       mimetype: node.mimetype || "video/mp4",
-      caption: "🎬 *Video convertido al estilo GIF largo (sin audio)*\n\n🍧 _Suki Subbots_"
+      caption: "🎬 *Video convertido al estilo GIF largo (sin audio)*\n\n🍧 _Black Clover Subbots_"
     }, { quoted: msg });
 
     await conn.sendMessage(chatId, { react: { text: "✅", key: msg.key } }).catch(() => {});

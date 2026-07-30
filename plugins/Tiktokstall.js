@@ -35,7 +35,7 @@ const handler = async (msg, { conn, args, command }) => {
       `❤️ *Likes Totales:* ${userInfo.meGustaTotales}\n` +
       `🎥 *Videos:* ${userInfo.videosTotales}\n` +
       `🤝 *Amigos:* ${userInfo.amigosTotales}\n\n` +
-      `🍧 *La Suki Bot* · dorratz.com`;
+      `🍧 *Black Clover Bot* · dorratz.com`;
 
     await conn.sendMessage(chatId, {
       image: { url: userInfo.avatar },

@@ -78,7 +78,7 @@ const handler = async (msg, { conn, wa }) => {
   }
 
   const fecha = new Date().toLocaleString("es-AR", { timeZone: "America/Argentina/Buenos_Aires" });
-  const header = `📢 *COMUNICADO OFICIAL DE SUKI BOT* 📢\n──────────────\n🕒 Fecha: ${fecha}\n──────────────\n\n`;
+  const header = `📢 *COMUNICADO OFICIAL DE BLACK CLOVER BOT* 📢\n──────────────\n🕒 Fecha: ${fecha}\n──────────────\n\n`;
 
   let broadcastMsg = null;
 

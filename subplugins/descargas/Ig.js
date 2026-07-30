@@ -397,13 +397,13 @@ async function sendPreview(conn, chatId, msg, thumb, caption, usarBotones, pref)
       ? {
           image: { url: thumb },
           caption,
-          footer: `❦ ${getMarca(conn)} — Selecciona una opción ❦`,
+          footer: `☘️ ${getMarca(conn)} — Selecciona una opción ☘️`,
           buttons,
           headerType: 4
         }
       : {
           text: caption,
-          footer: `❦ ${getMarca(conn)} — Selecciona una opción ❦`,
+          footer: `☘️ ${getMarca(conn)} — Selecciona una opción ☘️`,
           buttons,
           headerType: 1
         };
@@ -425,13 +425,13 @@ async function sendPreview(conn, chatId, msg, thumb, caption, usarBotones, pref)
         ? {
             image: { url: thumb },
             caption,
-            footer: `❦ ${getMarca(conn)} — Selecciona una opción ❦`,
+            footer: `☘️ ${getMarca(conn)} — Selecciona una opción ☘️`,
             buttons: simpleButtons,
             headerType: 4
           }
         : {
             text: caption,
-            footer: `❦ ${getMarca(conn)} — Selecciona una opción ❦`,
+            footer: `☘️ ${getMarca(conn)} — Selecciona una opción ☘️`,
             buttons: simpleButtons,
             headerType: 1
           },
@@ -523,9 +523,9 @@ ${pref}${command} https://www.instagram.com/reel/XXXX/`
 
     const caption = usarBotones
       ? `
-╭━━━━━━━━━━━━━━━━╮
+┏━━━━━━━━━━━━━━━━┓
    ⚡ 𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠 ⚡
-╰━━━━━━━━━━━━━━━━╯
+┗━━━━━━━━━━━━━━━━┛
 
 📦 *Contenido detectado:* ${resumen}
 
@@ -545,9 +545,9 @@ Toca un botón abajo del mensaje:
 ━━━━━━━━━━━━━━━━
 `.trim()
       : `
-╭━━━━━━━━━━━━━━━━╮
+┏━━━━━━━━━━━━━━━━┓
    ⚡ 𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠 ⚡
-╰━━━━━━━━━━━━━━━━╯
+┗━━━━━━━━━━━━━━━━┛
 
 📦 *Contenido detectado:* ${resumen}
 

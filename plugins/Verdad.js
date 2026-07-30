@@ -22,7 +22,7 @@ const handler = async (msg, { conn }) => {
     await conn.sendMessage(chatId, {
       video: { url: 'https://cdn.russellxz.click/ee5ab947.mp4' },
       gifPlayback: true,
-      caption: `𝘏𝘢𝘴 𝘦𝘴𝘤𝘰𝘨𝘪𝘥𝘰 *𝘝𝘌𝘙𝘋𝘈𝘋*\n\n╱╲❀╱╲╱╲❀╱╲╱╲❀╱╲\n◆ ${verdad}\n╲╱❀╲╱╲╱❀╲╱╲╱❀╲╱\n\n© La Suki Bot`
+      caption: `𝘏𝘢𝘴 𝘦𝘴𝘤𝘰𝘨𝘪𝘥𝘰 *𝘝𝘌𝘙𝘋𝘈𝘋*\n\n╱╲❀╱╲╱╲❀╱╲╱╲❀╱╲\n◆ ${verdad}\n╲╱❀╲╱╲╱❀╲╱╲╱❀╲╱\n\n© Black Clover Bot`
     }, { quoted: msg });
 
     await conn.sendMessage(chatId, {

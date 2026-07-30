@@ -1,192 +1,192 @@
 {
   "version": 1,
-  "nota": "7 diseños para los menús y los comandos de descarga. Se eligen con el comando setmenu. Placeholders: {marca} {titulo} {seccion} {item} {clave} {valor} {texto} El campo fuente cambia el tipo de letra de los TÍTULOS (no de los comandos).",
+  "nota": "12 diseños para los menús y los comandos de descarga. Se eligen con el comando setmenu. Placeholders: {marca} {titulo} {seccion} {item} {clave} {valor} {texto} El campo fuente cambia el tipo de letra de los TÍTULOS (no de los comandos).",
   "disenos": [
     {
       "id": 1,
-      "nombre": "Clásico",
-      "emoji": "🦋",
-      "descripcion": "Bordes suaves y elegantes, el estilo de siempre",
-      "muestra": "╭━━━━━╮\n│ ✦ item\n╰━━━━━╯",
+      "nombre": "Grimorio",
+      "emoji": "☘️",
+      "descripcion": "Páginas de grimorio con tréboles, el estilo de siempre",
+      "muestra": "┏━━━━━┓\n┃ ☘ item\n┗━━━━━┛",
       "cabecera": [
-        "╭━━━━━━━━━━━━━━━━━━╮",
-        "   ❦ {marca} ❦",
-        "╰━━━━━━━━━━━━━━━━━━╯"
+        "┏━━━━━━━━━━━━━━━━━┓",
+        "  ☘️ {marca} ☘️",
+        "┗━━━━━━━━━━━━━━━━━┛"
       ],
-      "titulo": "『 {titulo} 』",
-      "info": "❦ *{clave}:* {valor}",
-      "seccionAbre": "╭──❦ *{seccion}*",
-      "seccionItem": "│ ✦ {item}",
-      "seccionCierra": "╰───────────❦",
+      "titulo": "❰ {titulo} ❱",
+      "info": "☘ *{clave}:* {valor}",
+      "seccionAbre": "┏━☘ *{seccion}*",
+      "seccionItem": "┃ ✧ {item}",
+      "seccionCierra": "┗━━━━━━━━━━━☘",
       "nota": "✨ {texto}",
       "pie": [
-        "━━━━━━━━━━━━━━━━━━",
-        "   🤖 *{marca}*"
+        "━━━━━━━━━━━━━━━━━",
+        "  ☘️ *{marca}*"
       ],
       "descarga": {
         "cabecera": [
-          "╭━━━━━━━━━━━━━━━━━━╮",
-          "   ❦ {titulo} ❦",
-          "╰━━━━━━━━━━━━━━━━━━╯"
+          "┏━━━━━━━━━━━━━━━━━┓",
+          "  ☘️ {titulo} ☘️",
+          "┗━━━━━━━━━━━━━━━━━┛"
         ],
-        "campo": "❦ *{clave}:* {valor}",
+        "campo": "☘ *{clave}:* {valor}",
         "pie": [
-          "━━━━━━━━━━━━━━━━━━",
-          "   🤖 *{marca}*"
+          "━━━━━━━━━━━━━━━━━",
+          "  ☘️ *{marca}*"
         ]
       }
     },
     {
       "id": 2,
-      "nombre": "Neón",
-      "emoji": "💠",
-      "descripcion": "Estilo futurista con barras y diamantes",
-      "muestra": "▰▰▰▰▰▰▰\n◈ item\n▰▰▰▰▰▰▰",
+      "nombre": "Trébol Negro",
+      "emoji": "♣️",
+      "descripcion": "Hojas negras y barras marcadas, puro Black Clover",
+      "muestra": "▬▬▬▬▬▬▬\n♣ item\n▬▬▬▬▬▬▬",
       "cabecera": [
-        "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰",
-        "  💠 {marca} 💠",
-        "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰"
+        "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+        "  ♣️ {marca} ♣️",
+        "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
       ],
       "titulo": "⟪ {titulo} ⟫",
-      "info": "◈ *{clave}:* {valor}",
-      "seccionAbre": "▰▰▰ *{seccion}* ▰▰▰",
-      "seccionItem": "◈ {item}",
-      "seccionCierra": "▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱",
+      "info": "♣ *{clave}:* {valor}",
+      "seccionAbre": "▬▬▬ *{seccion}* ▬▬▬",
+      "seccionItem": "♣ {item}",
+      "seccionCierra": "▭▭▭▭▭▭▭▭▭▭▭▭▭▭▭",
       "nota": "⚡ {texto}",
       "pie": [
-        "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰",
-        "  💠 *{marca}* 💠"
+        "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+        "  ♣️ *{marca}* ♣️"
       ],
       "descarga": {
         "cabecera": [
-          "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰",
-          "  💠 {titulo} 💠",
-          "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰"
+          "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+          "  ♣️ {titulo} ♣️",
+          "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
         ],
-        "campo": "◈ *{clave}:* {valor}",
+        "campo": "♣ *{clave}:* {valor}",
         "pie": [
-          "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰",
-          "  💠 *{marca}* 💠"
+          "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬",
+          "  ♣️ *{marca}* ♣️"
         ]
       }
     },
     {
       "id": 3,
-      "nombre": "Elegante",
-      "emoji": "🕊️",
-      "descripcion": "Líneas finas y limpias, muy sobrio",
-      "muestra": "──────────\n❖ item\n──────────",
+      "nombre": "Espada de Asta",
+      "emoji": "⚔️",
+      "descripcion": "Filos limpios y sobrios, corte de antimagia",
+      "muestra": "═════════\n⚔ item\n═════════",
       "cabecera": [
-        "─────────────────",
-        "     {marca}",
-        "─────────────────"
+        "═════════════════",
+        "   ⚔️ {marca} ⚔️",
+        "═════════════════"
       ],
-      "titulo": "❖  {titulo}",
-      "info": "❖ *{clave}:* {valor}",
-      "seccionAbre": "◇ *{seccion}*",
-      "seccionItem": "   ❖ {item}",
-      "seccionCierra": "─────────────────",
-      "nota": "❖ {texto}",
+      "titulo": "⚔  {titulo}",
+      "info": "⌁ *{clave}:* {valor}",
+      "seccionAbre": "◈ *{seccion}*",
+      "seccionItem": "   ⚔ {item}",
+      "seccionCierra": "═════════════════",
+      "nota": "⌁ {texto}",
       "pie": [
-        "─────────────────",
-        "     *{marca}*"
+        "═════════════════",
+        "   ⚔️ *{marca}*"
       ],
       "descarga": {
         "cabecera": [
-          "─────────────────",
-          "   {titulo}",
-          "─────────────────"
+          "═════════════════",
+          "   ⚔️ {titulo} ⚔️",
+          "═════════════════"
         ],
-        "campo": "❖ *{clave}:* {valor}",
+        "campo": "⌁ *{clave}:* {valor}",
         "pie": [
-          "─────────────────",
-          "     *{marca}*"
+          "═════════════════",
+          "   ⚔️ *{marca}*"
         ]
       }
     },
     {
       "id": 4,
-      "nombre": "Kawaii",
-      "emoji": "🌸",
-      "descripcion": "Tierno y colorido, con corazones y flores",
-      "muestra": "･ﾟ✧･ﾟ:*\n♡ item\n*:･ﾟ✧･ﾟ",
+      "nombre": "Toro Negro",
+      "emoji": "🐂",
+      "descripcion": "Ruidoso y salvaje, la guarida de los Toros Negros",
+      "muestra": "≡≡≡≡≡≡≡≡\n🐾 item\n≡≡≡≡≡≡≡≡",
       "cabecera": [
-        "･ﾟ✧･ﾟ:*✧･ﾟ:*✧･ﾟ:*✧･ﾟ",
-        "   🌸 {marca} 🌸",
-        "*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧･ﾟ"
+        "≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡",
+        "   🐂 {marca} 🐂",
+        "≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡"
       ],
-      "titulo": "♡ {titulo} ♡",
-      "info": "🌷 *{clave}:* {valor}",
-      "seccionAbre": "🌸 *{seccion}* 🌸",
-      "seccionItem": "  ♡ {item}",
-      "seccionCierra": "･ﾟ✧･ﾟ:*✧･ﾟ:*✧･ﾟ:*✧･ﾟ",
-      "nota": "💖 {texto}",
+      "titulo": "⟨ {titulo} ⟩",
+      "info": "🐾 *{clave}:* {valor}",
+      "seccionAbre": "🐂 *{seccion}* 🐂",
+      "seccionItem": "  ▸ {item}",
+      "seccionCierra": "≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡",
+      "nota": "💢 {texto}",
       "pie": [
-        "*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧･ﾟ",
-        "  🌸 *{marca}* 🌸"
+        "≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡",
+        "  🐂 *{marca}* 🐂"
       ],
       "descarga": {
         "cabecera": [
-          "･ﾟ✧･ﾟ:*✧･ﾟ:*✧･ﾟ:*✧･ﾟ",
-          "   🌸 {titulo} 🌸",
-          "*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧･ﾟ"
+          "≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡",
+          "   🐂 {titulo} 🐂",
+          "≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡"
         ],
-        "campo": "🌷 *{clave}:* {valor}",
+        "campo": "🐾 *{clave}:* {valor}",
         "pie": [
-          "*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧･ﾟ",
-          "  🌸 *{marca}* 🌸"
+          "≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡",
+          "  🐂 *{marca}* 🐂"
         ]
       }
     },
     {
       "id": 5,
-      "nombre": "Hacker",
-      "emoji": "💻",
-      "descripcion": "Estilo terminal, corchetes y flechas",
-      "muestra": "[■■■■■■]\n> item\n[■■■■■■]",
+      "nombre": "Antimagia",
+      "emoji": "🗡️",
+      "descripcion": "Trazos rotos de espada, estilo terminal oscuro",
+      "muestra": "[▚▚▚▚▚▚]\n» item\n[▚▚▚▚▚▚]",
       "cabecera": [
-        "[■■■■■■■■■■■■■■■]",
-        "  root@{marca}",
-        "[■■■■■■■■■■■■■■■]"
+        "[▚▚▚▚▚▚▚▚▚▚▚▚▚▚]",
+        "  🗡️ {marca}",
+        "[▚▚▚▚▚▚▚▚▚▚▚▚▚▚]"
       ],
-      "titulo": "> {titulo}",
-      "info": "[+] *{clave}:* {valor}",
+      "titulo": "» {titulo}",
+      "info": "[✚] *{clave}:* {valor}",
       "seccionAbre": "┌─[ *{seccion}* ]",
-      "seccionItem": "├─> {item}",
+      "seccionItem": "├─» {item}",
       "seccionCierra": "└──────────────",
       "nota": "[!] {texto}",
       "pie": [
-        "[■■■■■■■■■■■■■■■]",
-        "  > *{marca}* _online_"
+        "[▚▚▚▚▚▚▚▚▚▚▚▚▚▚]",
+        "  » *{marca}* _activo_"
       ],
       "descarga": {
         "cabecera": [
-          "[■■■■■■■■■■■■■■■]",
+          "[▚▚▚▚▚▚▚▚▚▚▚▚▚▚]",
           "  {titulo}",
-          "[■■■■■■■■■■■■■■■]"
+          "[▚▚▚▚▚▚▚▚▚▚▚▚▚▚]"
         ],
-        "campo": "[+] *{clave}:* {valor}",
+        "campo": "[✚] *{clave}:* {valor}",
         "pie": [
-          "[■■■■■■■■■■■■■■■]",
-          "  > *{marca}* _online_"
+          "[▚▚▚▚▚▚▚▚▚▚▚▚▚▚]",
+          "  » *{marca}* _activo_"
         ]
       }
     },
     {
       "id": 6,
-      "nombre": "Real",
+      "nombre": "Rey Mago",
       "emoji": "👑",
-      "descripcion": "Dorado y majestuoso, doble borde",
-      "muestra": "╔════════╗\n❥ item\n╚════════╝",
+      "descripcion": "Doble borde real, digno del trono del Rey Mago",
+      "muestra": "╔════════╗\n♛ item\n╚════════╝",
       "cabecera": [
         "╔══════════════════╗",
         "   👑 {marca} 👑",
         "╚══════════════════╝"
       ],
       "titulo": "「 {titulo} 」",
-      "info": "❥ *{clave}:* {valor}",
-      "seccionAbre": "╔══❥ *{seccion}*",
-      "seccionItem": "║ ❥ {item}",
+      "info": "♛ *{clave}:* {valor}",
+      "seccionAbre": "╔══♛ *{seccion}*",
+      "seccionItem": "║ ✦ {item}",
       "seccionCierra": "╚═══════════════",
       "nota": "👑 {texto}",
       "pie": [
@@ -200,7 +200,7 @@
           "   👑 {titulo} 👑",
           "╚══════════════════╝"
         ],
-        "campo": "❥ *{clave}:* {valor}",
+        "campo": "♛ *{clave}:* {valor}",
         "pie": [
           "╔══════════════════╗",
           "   👑 *{marca}* 👑",
@@ -210,17 +210,17 @@
     },
     {
       "id": 7,
-      "nombre": "Minimal",
-      "emoji": "⚪",
-      "descripcion": "Sin adornos, limpio y directo",
-      "muestra": "TÍTULO\n• item",
+      "nombre": "Maná Puro",
+      "emoji": "✧",
+      "descripcion": "Sin adornos, solo maná limpio y directo",
+      "muestra": "TÍTULO\n☘ item",
       "cabecera": [
         "*{marca}*"
       ],
       "titulo": "*{titulo}*",
       "info": "{clave}: *{valor}*",
       "seccionAbre": "*{seccion}*",
-      "seccionItem": "• {item}",
+      "seccionItem": "☘ {item}",
       "seccionCierra": "",
       "nota": "{texto}",
       "pie": [
@@ -238,26 +238,26 @@
     },
     {
       "id": 8,
-      "nombre": "Cyberpunk",
-      "emoji": "🌐",
-      "descripcion": "Neón futurista con letra ancha y circuitos",
-      "muestra": "╔═[SYS]═╗\n▸ item\n╚═══════╝",
+      "nombre": "Amanecer Dorado",
+      "emoji": "🌟",
+      "descripcion": "Elegancia dorada del Amanecer Dorado, letra ancha",
+      "muestra": "┏═[☀]═┓\n✦ item\n┗═════┛",
       "fuente": "ancha",
       "cabecera": [
         "┏━━━━━━━━━━━━━━━━━┓",
         "  ⟦ {marca} ⟧",
         "┗━━━━━━━━━━━━━━━━━┛",
-        "  ▰▰▰ ⓘ SYSTEM ONLINE ▰▰▰"
+        "  ✧✧✧ ☀️ MAGIA ACTIVA ☀️ ✧✧✧"
       ],
       "titulo": "╔═◤ {titulo} ◢═╗",
-      "info": "▸ ⟨{clave}⟩ *{valor}*",
+      "info": "✦ ⟨{clave}⟩ *{valor}*",
       "seccionAbre": "┌─◤ {seccion} ◢",
-      "seccionItem": "│▸ {item}",
+      "seccionItem": "│✦ {item}",
       "seccionCierra": "└──────────◢",
       "nota": "⟦ {texto} ⟧",
       "pie": [
         "┏━━━━━━━━━━━━━━━━━┓",
-        "  ⟦ {marca} ⟧ ⚡",
+        "  ⟦ {marca} ⟧ 🌟",
         "┗━━━━━━━━━━━━━━━━━┛"
       ],
       "descarga": {
@@ -266,59 +266,59 @@
           "  ⟦ {titulo} ⟧",
           "┗━━━━━━━━━━━━━━━━━┛"
         ],
-        "campo": "▸ ⟨{clave}⟩ *{valor}*",
+        "campo": "✦ ⟨{clave}⟩ *{valor}*",
         "pie": [
           "┗━━━━━━━━━━━━━━━━━┛",
-          "  ⟦ {marca} ⟧ ⚡"
+          "  ⟦ {marca} ⟧ 🌟"
         ]
       }
     },
     {
       "id": 9,
-      "nombre": "Matrix",
-      "emoji": "🟩",
-      "descripcion": "Código verde cayendo, letra monoespaciada",
-      "muestra": "01010101\n> item\n01010101",
+      "nombre": "Zona de Maná",
+      "emoji": "🌀",
+      "descripcion": "Sellos mágicos en letra monoespaciada",
+      "muestra": "◇◆◇◆◇◆◇◆\n⇥ item\n◇◆◇◆◇◆◇◆",
       "fuente": "mono",
       "cabecera": [
-        "010110100101101001011010",
+        "◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇",
         "  ⟪ {marca} ⟫",
-        "010110100101101001011010"
+        "◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇"
       ],
       "titulo": "⟪ {titulo} ⟫",
-      "info": "01▸ {clave}: *{valor}*",
+      "info": "◆▸ {clave}: *{valor}*",
       "seccionAbre": "╓─⟪ {seccion} ⟫",
       "seccionItem": "║ ⇥ {item}",
       "seccionCierra": "╙────────────⟫",
       "nota": "⟪ {texto} ⟫",
       "pie": [
-        "010110100101101001011010",
-        "  ⟪ {marca} ⟫ 🟩"
+        "◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇",
+        "  ⟪ {marca} ⟫ 🌀"
       ],
       "descarga": {
         "cabecera": [
-          "010110100101101001011010",
+          "◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇",
           "  ⟪ {titulo} ⟫",
-          "010110100101101001011010"
+          "◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇"
         ],
-        "campo": "01▸ {clave}: *{valor}*",
+        "campo": "◆▸ {clave}: *{valor}*",
         "pie": [
-          "010110100101101001011010",
-          "  ⟪ {marca} ⟫ 🟩"
+          "◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇",
+          "  ⟪ {marca} ⟫ 🌀"
         ]
       }
     },
     {
       "id": 10,
-      "nombre": "Galaxia",
-      "emoji": "🌌",
-      "descripcion": "Estrellas y planetas, letra doble",
-      "muestra": "✦･ﾟ✧✦･ﾟ✧\n✧ item\n✦･ﾟ✧✦･ﾟ✧",
+      "nombre": "Espíritu del Viento",
+      "emoji": "🌪️",
+      "descripcion": "Ráfagas y destellos de Sylph, letra doble",
+      "muestra": "≈✧≈✦≈✧≈✦\n✧ item\n≈✦≈✧≈✦≈✧",
       "fuente": "doble",
       "cabecera": [
-        "✦ ･ ✧ ･ ✦ ･ ✧ ･ ✦ ･ ✧ ･ ✦",
-        "   🌌 {marca} 🌌",
-        "✧ ･ ✦ ･ ✧ ･ ✦ ･ ✧ ･ ✦ ･ ✧"
+        "≈✧≈✦≈✧≈✦≈✧≈✦≈✧≈",
+        "   🌪️ {marca} 🌪️",
+        "≈✦≈✧≈✦≈✧≈✦≈✧≈✦≈"
       ],
       "titulo": "⋆｡°✩ {titulo} ✩°｡⋆",
       "info": "✧ *{clave}:* {valor}",
@@ -327,32 +327,32 @@
       "seccionCierra": "╰──────────✦",
       "nota": "⋆ {texto} ⋆",
       "pie": [
-        "✦ ･ ✧ ･ ✦ ･ ✧ ･ ✦ ･ ✧ ･ ✦",
-        "   🌌 {marca} 🌌"
+        "≈✧≈✦≈✧≈✦≈✧≈✦≈✧≈",
+        "   🌪️ {marca} 🌪️"
       ],
       "descarga": {
         "cabecera": [
-          "✦ ･ ✧ ･ ✦ ･ ✧ ･ ✦ ･ ✧ ･ ✦",
-          "   🌌 {titulo} 🌌",
-          "✧ ･ ✦ ･ ✧ ･ ✦ ･ ✧ ･ ✦ ･ ✧"
+          "≈✧≈✦≈✧≈✦≈✧≈✦≈✧≈",
+          "   🌪️ {titulo} 🌪️",
+          "≈✦≈✧≈✦≈✧≈✦≈✧≈✦≈"
         ],
         "campo": "✧ *{clave}:* {valor}",
         "pie": [
-          "✦ ･ ✧ ･ ✦ ･ ✧ ･ ✦ ･ ✧ ･ ✦",
-          "   🌌 {marca} 🌌"
+          "≈✧≈✦≈✧≈✦≈✧≈✦≈✧≈",
+          "   🌪️ {marca} 🌪️"
         ]
       }
     },
     {
       "id": 11,
-      "nombre": "Infierno",
-      "emoji": "🔥",
-      "descripcion": "Llamas y letra gótica, puro fuego",
+      "nombre": "Demonio de Asta",
+      "emoji": "😈",
+      "descripcion": "Llamas y letra gótica, aura demoníaca",
       "muestra": "🔥🔥🔥🔥🔥\n♦ item\n🔥🔥🔥🔥🔥",
       "fuente": "gotica",
       "cabecera": [
         "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥",
-        "   ♦ {marca} ♦",
+        "   😈 {marca} 😈",
         "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥"
       ],
       "titulo": "🔥 {titulo} 🔥",
@@ -363,53 +363,53 @@
       "nota": "🔥 {texto} 🔥",
       "pie": [
         "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥",
-        "   ♦ {marca} ♦"
+        "   😈 *{marca}* 😈"
       ],
       "descarga": {
         "cabecera": [
           "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥",
-          "   ♦ {titulo} ♦",
+          "   😈 {titulo} 😈",
           "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥"
         ],
         "campo": "♦ *{clave}:* {valor}",
         "pie": [
           "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥",
-          "   ♦ {marca} ♦"
+          "   😈 *{marca}* 😈"
         ]
       }
     },
     {
       "id": 12,
-      "nombre": "Retro",
-      "emoji": "📼",
-      "descripcion": "Vaporwave de los 80, letra ancha",
-      "muestra": "▓▒░ TITULO ░▒▓\n◆ item",
+      "nombre": "Reino del Trébol",
+      "emoji": "🏰",
+      "descripcion": "Estandartes del reino con letra ancha",
+      "muestra": "▚▞▚▞ TITULO ▞▚▞▚\n☘ item",
       "fuente": "ancha",
       "cabecera": [
-        "▓▒░░▒▓▒░░▒▓▒░░▒▓",
+        "▚▞▚▞▚▞▚▞▚▞▚▞▚▞",
         "   ⟢ {marca} ⟣",
-        "▓▒░░▒▓▒░░▒▓▒░░▒▓"
+        "▞▚▞▚▞▚▞▚▞▚▞▚▞▚"
       ],
-      "titulo": "░▒▓ {titulo} ▓▒░",
-      "info": "◆ *{clave}:* {valor}",
-      "seccionAbre": "▓▒░ {seccion} ░▒▓",
-      "seccionItem": "◆ {item}",
-      "seccionCierra": "░▒▓▒░▒▓▒░▒▓▒░▒▓",
+      "titulo": "▚▞ {titulo} ▞▚",
+      "info": "☘ *{clave}:* {valor}",
+      "seccionAbre": "▚▞ {seccion} ▞▚",
+      "seccionItem": "☘ {item}",
+      "seccionCierra": "▞▚▞▚▞▚▞▚▞▚▞▚▞▚",
       "nota": "⟢ {texto} ⟣",
       "pie": [
-        "▓▒░░▒▓▒░░▒▓▒░░▒▓",
-        "   ⟢ {marca} ⟣ 📼"
+        "▚▞▚▞▚▞▚▞▚▞▚▞▚▞",
+        "   ⟢ {marca} ⟣ 🏰"
       ],
       "descarga": {
         "cabecera": [
-          "▓▒░░▒▓▒░░▒▓▒░░▒▓",
+          "▚▞▚▞▚▞▚▞▚▞▚▞▚▞",
           "   ⟢ {titulo} ⟣",
-          "▓▒░░▒▓▒░░▒▓▒░░▒▓"
+          "▞▚▞▚▞▚▞▚▞▚▞▚▞▚"
         ],
-        "campo": "◆ *{clave}:* {valor}",
+        "campo": "☘ *{clave}:* {valor}",
         "pie": [
-          "▓▒░░▒▓▒░░▒▓▒░░▒▓",
-          "   ⟢ {marca} ⟣ 📼"
+          "▚▞▚▞▚▞▚▞▚▞▚▞▚▞",
+          "   ⟢ {marca} ⟣ 🏰"
         ]
       }
     }

@@ -872,12 +872,12 @@ const handler = async (conn) => {
   }
 
   // Evita registrar el listener muchas veces si el loader recarga plugins
-  if (conn.__sukiWelcomeOldListenerStarted) {
+  if (conn.__bcWelcomeOldListenerStarted) {
     console.log("♻️ Listener viejo de bienvenidas/despedidas ya estaba activo.");
     return;
   }
 
-  conn.__sukiWelcomeOldListenerStarted = true;
+  conn.__bcWelcomeOldListenerStarted = true;
 
   // Listener normal de Baileys
   conn.ev.on("group-participants.update", async (update) => {

@@ -25,11 +25,11 @@ import {
 } from "./subbots.js";
 
 /*
-  webserver.js para La Suki Bot
+  webserver.js para Black Clover Bot
   - Relay/polling con el panel central.
   - Compatible con Pterodactyl.
   - Detecta puerto/IP/URL pública automáticamente.
-  - Notifica en grupos cuando se cambia configuración, se abre/cierra grupo o se saca a Suki.
+  - Notifica en grupos cuando se cambia configuración, se abre/cierra grupo o se saca a Black Clover.
 */
 
 function normalizeUrl(url) {
@@ -57,15 +57,15 @@ const SKY_ULTRA_PLUS_URL = normalizeUrl(
 
 function notificationFooter() {
   return `
-╭━━━〔 🌐 LA SUKI BOT 〕━━━╮
-┃ 💜 Página oficial:
+┏━━━〔 ☘️ BLACK CLOVER BOT 〕━━━┓
+┃ ☘️ Página oficial:
 ┃ ${SUKI_PUBLIC_WEB_URL}
 ┃
 ┃ 🚀 *Sky Ultra Plus*
 ┃ ⚡ El hosting del futuro
 ┃ 🤖 Donde la mejor bot está alojada
 ┃ ${SKY_ULTRA_PLUS_URL}
-╰━━━━━━━━━━━━━━━━━━━━━━╯`;
+┗━━━━━━━━━━━━━━━━━━━━━━┛`;
 }
 
 const API_KEYS_PATH = path.resolve("./api_keys.json");
@@ -1004,7 +1004,7 @@ async function notifyConfig(sock, chatId, key, active) {
 🧩 *Ajuste:* ${label}
 📌 *Estado:* ${estado}
 
-👑 Acción ejecutada por mi dueño desde el panel web de *La Suki Bot*.
+👑 Acción ejecutada por mi dueño desde el panel web de *Black Clover Bot*.
 
 ${notificationFooter()}`;
 
@@ -1022,7 +1022,7 @@ async function notifyGroupMode(sock, chatId, mode) {
 
 ✅ Ahora todos los integrantes pueden enviar mensajes.
 
-👑 Acción ejecutada desde el panel web de *La Suki Bot*.
+👑 Acción ejecutada desde el panel web de *Black Clover Bot*.
 
 ${notificationFooter()}`;
   } else {
@@ -1033,7 +1033,7 @@ ${notificationFooter()}`;
 
 👑 Ahora solo los administradores pueden enviar mensajes.
 
-👑 Acción ejecutada desde el panel web de *La Suki Bot*.
+👑 Acción ejecutada desde el panel web de *Black Clover Bot*.
 
 ${notificationFooter()}`;
   }
@@ -1317,14 +1317,14 @@ function buildSubbotInfo() {
     const sock = getSock();
     const rawId = String(sock?.user?.id || sock?.user?.jid || "");
     const ownerNumber = rawId.split(":")[0].split("@")[0].replace(/[^0-9]/g, "");
-    const ownerName = sock?.user?.name || sock?.user?.verifiedName || "La Suki Bot";
+    const ownerName = sock?.user?.name || sock?.user?.verifiedName || "Black Clover Bot";
 
     let subbots = [];
     try {
       subbots = (listSubbots() || [])
         .filter(b => b.connected)
         .map(b => ({
-          name: b.name || "Suki Subbot",
+          name: b.name || "Black Clover Subbot",
           device: formatPlatform(b.platform),
           uptime: b.connectedSince ? formatUptime(Date.now() - b.connectedSince) : "—",
           connectedSince: b.connectedSince || null
@@ -1342,7 +1342,7 @@ function buildSubbotInfo() {
     return {
       subbotHosting: getSubbotHosting(),
       ownerNumber: "",
-      ownerName: "La Suki Bot",
+      ownerName: "Black Clover Bot",
       subbotsCount: 0,
       subbots: []
     };
@@ -1357,7 +1357,7 @@ function buildPanelBody(reason, state = {}, extra = {}) {
   const subbotInfo = buildSubbotInfo();
 
   return {
-    botName: "La Suki Bot",
+    botName: "Black Clover Bot",
     publicUrl: getPublicBaseUrl(),
     reason,
     registeredAt: Date.now(),
@@ -1464,7 +1464,7 @@ async function reportTaskResult(taskId, ok, result = {}, error = "") {
     ok,
     result: result || {},
     error: error || "",
-    botName: "La Suki Bot",
+    botName: "Black Clover Bot",
     publicUrl: getPublicBaseUrl(),
 
     hashes: keyHashes,
@@ -1792,13 +1792,13 @@ async function executeTask(sock, task) {
     await sendGroupNotice(
       sock,
       chatId,
-`╭━━━〔 👋 SUKI SE VA 〕━━━╮
-┃ 💜 *Gracias por usarme*
-╰━━━━━━━━━━━━━━━━━━━━━━╯
+`┏━━━〔 👋 BLACK CLOVER SE VA 〕━━━┓
+┃ ☘️ *Gracias por usarme*
+┗━━━━━━━━━━━━━━━━━━━━━━┛
 
 Mi dueño me sacó desde el panel web.
 
-Gracias por usar *La Suki Bot*.
+Gracias por usar *Black Clover Bot*.
 Bye bye ✨🚀
 
 ${notificationFooter()}`
@@ -2043,7 +2043,7 @@ function startWebServer(sock) {
   app.get("/", (req, res) => {
     res.json({
       ok: true,
-      name: "La Suki Bot API",
+      name: "Black Clover Bot API",
       status: "online",
       relay: true,
       panelUrl: SUKI_PANEL_URL,
@@ -2369,13 +2369,13 @@ function startWebServer(sock) {
       await sendGroupNotice(
         currentSock,
         chatId,
-`╭━━━〔 👋 SUKI SE VA 〕━━━╮
-┃ 💜 *Gracias por usarme*
-╰━━━━━━━━━━━━━━━━━━━━━━╯
+`┏━━━〔 👋 BLACK CLOVER SE VA 〕━━━┓
+┃ ☘️ *Gracias por usarme*
+┗━━━━━━━━━━━━━━━━━━━━━━┛
 
 Mi dueño me sacó desde el panel web.
 
-Gracias por usar *La Suki Bot*.
+Gracias por usar *Black Clover Bot*.
 Bye bye ✨🚀
 
 ${notificationFooter()}`
@@ -2404,7 +2404,7 @@ ${notificationFooter()}`
   });
 
   app.listen(PORT, "0.0.0.0", () => {
-    console.log("🌐 API web de La Suki Bot activa en puerto " + PORT);
+    console.log("🌐 API web de Black Clover Bot activa en puerto " + PORT);
     console.log("🌐 Panel central:", SUKI_PANEL_URL);
     console.log("🌍 Public URL detectada:", getPublicBaseUrl() || "sin detectar todavía");
     console.log("🧩 IP detectada:", getServerIp() || "sin IP env");

@@ -63,7 +63,7 @@ const handler = async (msg, { conn }) => {
   }
 
   return enviarMenu(conn, chatId, msg, "menuaudio", {
-    titulo: "PAQUETES DE MULTIMEDIA",
+    titulo: "HECHIZOS DE SONIDO",
     info: [
       ["Paquetes disponibles", total],
       ["Archivos totales", totalArchivos]

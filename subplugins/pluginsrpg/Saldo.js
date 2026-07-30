@@ -28,15 +28,15 @@ const handler = async (msg, { conn }) => {
     });
   }
 
-  const caption = `💳 *TU SALDO EN EL RPG DE LA SUKI BOT* 💳\n\n` +
+  const caption = `💳 *TU SALDO EN EL RPG DE BLACK CLOVER BOT* 💳\n\n` +
                   `👤 *Bienvenido ${user.nombre} ${user.apellido}*\n\n` +
                   `💸 *Saldo actual:* ${user.creditos} créditos\n` +
                   `🏦 *Saldo guardado:* ${user.guardado} créditos\n\n` +
                   `🛠️ Usa comandos como:\n- *.dep o .depositar* para guardar tu saldo\n- *.retirar o .ret* para mover créditos guardados\n\n` +
-                  `✨ ¡Sigue progresando en el mundo RPG de La Suki Bot!`;
+                  `✨ ¡Sigue progresando en el mundo RPG de Black Clover Bot!`;
 
   await conn.sendMessage(chatId, {
-    image: { url: "https://cdn.russellxz.click/f20c1249.jpeg" },
+    image: { url: "https://cdn.russellxz.click/43f6a610.jpg" },
     caption
   }, { quoted: msg });
 

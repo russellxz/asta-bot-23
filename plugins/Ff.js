@@ -94,7 +94,7 @@ const handler = async (msg, { conn, wa }) => {
       video: fs.readFileSync(finalPath),
       mimetype: 'video/mp4',
       fileName: 'video_optimo.mp4',
-      caption: `✅ *Video optimizado correctamente para WhatsApp*\n⏱️ *Conversión realizada en:* ${endTime}s\n\n🎬 *Procesado por La Suki Bot*`
+      caption: `✅ *Video optimizado correctamente para WhatsApp*\n⏱️ *Conversión realizada en:* ${endTime}s\n\n🎬 *Procesado por Black Clover Bot*`
     }, { quoted: msg });
 
     sentReact = '✅';

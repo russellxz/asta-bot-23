@@ -427,7 +427,7 @@ async function addExif(webpBuffer, metadata) {
   fs.writeFileSync(tmpIn, webpBuffer);
 
   const json = {
-    "sticker-pack-id": "suki-sks",
+    "sticker-pack-id": "black-clover-sks",
     "sticker-pack-name": metadata.packname,
     "sticker-pack-publisher": metadata.author,
     emojis: metadata.categories || [""],
@@ -471,7 +471,7 @@ async function procesarEfecto(conn, job, effectKey, triggerMsg) {
 
     const metadata = {
       packname: `✨ ${efecto.label} — ${senderName}`,
-      author: `🦋 Bot Creador: ❦La Suki Bot❦\n🎨 Efecto: ${efecto.label}\n🛠️ Desarrollado por: Russell XZ 💻\n📅 ${fechaStr}`,
+      author: `🦋 Bot Creador: ☘️ Black Clover Bot ☘️\n🎨 Efecto: ${efecto.label}\n🛠️ Desarrollado por: Russell XZ 💻\n📅 ${fechaStr}`,
     };
 
     let webpBuffer;
@@ -576,21 +576,21 @@ const handler = async (msg, { conn, wa }) => {
   // 🎨 Caption
   const caption = usarBotones
     ? `
-╭━━━━━━━━━━━━━━━━╮
+┏━━━━━━━━━━━━━━━━┓
 🎨 *CREADOR SKS PRO* 🎨
-╰━━━━━━━━━━━━━━━━╯
+┗━━━━━━━━━━━━━━━━┛
 
 Toca el botón abajo para elegir el efecto que deseas aplicarle a tu sticker.
 
 🎨 *50 efectos disponibles*
 ⏱️ *Menú activo por 10 minutos*
 
-❦ La Suki Bot ❦
+☘️ Black Clover Bot ☘️
 `.trim()
     : `
-╭━━━━━━━━━━━━━━━━━━━━╮
+┏━━━━━━━━━━━━━━━━━━━━┓
 🎨 *CREADOR SKS PRO* 🎨
-╰━━━━━━━━━━━━━━━━━━━━╯
+┗━━━━━━━━━━━━━━━━━━━━┛
 
 📎 *Media:* ${mediaType === "video" ? "🎬 Video (sticker animado)" : "🖼️ Imagen"}
 
@@ -604,7 +604,7 @@ ${listaNumerada}
 💡 El menú queda activo *10 minutos*. Puedes probar varios efectos con la misma imagen.
 
 ━━━━━━━━━━━━━━━━━━━━
-❦ La Suki Bot ❦
+☘️ Black Clover Bot ☘️
 ━━━━━━━━━━━━━━━━━━━━`.trim();
 
   // ====== Construir secciones del menú dinámicamente ======

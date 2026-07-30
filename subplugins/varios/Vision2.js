@@ -29,7 +29,7 @@ const handler = async (msg, { conn, args, command }) => {
       `🖼️ *Prompt usado:* ${data.data.prompt}\n` +
       `📎 *Imagen generada por IA anime*\n\n` +
       `🍧 API: api.neoxr.eu\n` +
-      `© Suki Subbots`;
+      `© Black Clover Subbots`;
 
     await conn.sendMessage(chatId, {
       image: { url: imageUrl },

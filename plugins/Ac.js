@@ -31,12 +31,12 @@ function safeIsOwner(msg) {
   }
 }
 
-const textoActualizacion = `🔥✨ *NUEVA ACTUALIZACIÓN DE SUKI* ✨🔥
-🚀 *Suki Actualización On Fire* 🚀
+const textoActualizacion = `🔥✨ *NUEVA ACTUALIZACIÓN DE BLACK CLOVER* ✨🔥
+🚀 *Black Clover Actualización On Fire* 🚀
 
-La nueva actualización de *La Suki Bot* ya está lista con mejoras, comandos nuevos y más funciones para todos ustedes. 💖
+La nueva actualización de *Black Clover Bot* ya está lista con mejoras, comandos nuevos y más funciones para todos ustedes. 💖
 
-╭━━━〔 🆕 *NOVEDADES* 〕━━━⬣
+┏━━━〔 🆕 *NOVEDADES* 〕━━━⬣
 
 🎨 *Nuevo comando:* \`.sks\`
 ➤ Crea stickers animados con más de *50 efectos disponibles*.
@@ -45,7 +45,7 @@ La nueva actualización de *La Suki Bot* ya está lista con mejoras, comandos nu
 ➤ Crea y guarda paquetes de stickers personalizados.
 
 📤 *Nuevo comando:* \`.sendsk\`
-➤ Suki envía el paquete de stickers creado.
+➤ Black Clover envía el paquete de stickers creado.
 
 🗑️ *Nuevo comando:* \`.delsk\`
 ➤ Elimina stickers dentro de un paquete guardado.
@@ -54,21 +54,21 @@ La nueva actualización de *La Suki Bot* ya está lista con mejoras, comandos nu
 ➤ Muestra los paquetes de stickers creados.
 
 ⚙️ *Nuevo comando:* \`.reaccion on / off\`
-➤ Activa o desactiva las respuestas/reacciones automáticas de Suki.
+➤ Activa o desactiva las respuestas/reacciones automáticas de Black Clover.
 
 🔘 *Nuevo comando:* \`.botones on / off\`
 ➤ Activa o desactiva los botones en los comandos compatibles.
 
-╰━━━━━━━━━━━━━━━━━━━━⬣
+┗━━━━━━━━━━━━━━━━━━━━⬣
 
-╭━━━〔 🛠️ *MEJORAS IMPORTANTES* 〕━━━⬣
+┏━━━〔 🛠️ *MEJORAS IMPORTANTES* 〕━━━⬣
 
 🔐 *Mejor manejo de LID y número real*
-➤ Ahora Suki trabaja mejor con usuarios que aparecen como *LID* y también con número real.
+➤ Ahora Black Clover trabaja mejor con usuarios que aparecen como *LID* y también con número real.
 
 👑 *Comando \`.addowner\` mejorado*
 ➤ Sigue funcionando para agregarte como owner.
-➤ Solo debes usarlo desde el mismo número de Suki.
+➤ Solo debes usarlo desde el mismo número de Black Clover.
 ➤ En privado no envía notificación ni mensaje, pero sí funciona correctamente.
 ➤ Puedes citar el mensaje del usuario que quieres agregar como owner o escribir el número directamente.
 
@@ -84,22 +84,22 @@ La nueva actualización de *La Suki Bot* ya está lista con mejoras, comandos nu
 
 incluyen botones para una experiencia más rápida y cómoda. ⚡
 
-╰━━━━━━━━━━━━━━━━━━━━⬣
+┗━━━━━━━━━━━━━━━━━━━━⬣
 
-╭━━━〔 🤖 *PRÓXIMAMENTE* 〕━━━⬣
+┏━━━〔 🤖 *PRÓXIMAMENTE* 〕━━━⬣
 
 🧠 Se estarán arreglando y mejorando los comandos de IA que ya no estaban respondiendo correctamente.
 
-🔥 Sigan pendientes, porque vienen más actualizaciones para *La Suki Bot*.
+🔥 Sigan pendientes, porque vienen más actualizaciones para *Black Clover Bot*.
 
-╰━━━━━━━━━━━━━━━━━━━━⬣
+┗━━━━━━━━━━━━━━━━━━━━⬣
 
 ⭐ *Apoya el proyecto*
-No olvides dejar tu estrella en el repositorio oficial de Suki para saber que les gusta el proyecto y seguir trayendo más actualizaciones nuevas. 💖
+No olvides dejar tu estrella en el repositorio oficial de Black Clover para saber que les gusta el proyecto y seguir trayendo más actualizaciones nuevas. 💖
 
-🔗 https://github.com/russellxz/LASUKIBOT.git
+🔗 https://github.com/russellxz/asta-bot-23.git
 
-💜 Gracias por usar *La Suki Bot*.`;
+💜 Gracias por usar *Black Clover Bot*.`;
 
 const handler = async (msg, { conn, command }) => {
   const chatId = msg.key.remoteJid;

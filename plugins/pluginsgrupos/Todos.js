@@ -115,7 +115,7 @@ const handler = async (msg, { conn, args }) => {
     const extraMsg = (args || []).join(" ");
 
     let finalMsg  = `╭─⌈ 🔊 𝐓𝐀𝐆𝐀𝐋𝐋 𝐌𝐎𝐃𝐄 ⌋──╮\n`;
-        finalMsg += `│ 🤖 *✧ Sᵘᵏⁱ 3.0 ᴮᵒᵗ ✧*\n`;
+        finalMsg += `│ 🤖 *✧ Bˡᵃᶜᵏ Cˡᵒᵛᵉʳ ᴮᵒᵗ ✧*\n`;
         finalMsg += `│ 👤 *Invocador:* @${senderNum}\n`;
     if (extraMsg.length > 0) {
         finalMsg += `│ 💬 *Mensaje:* ${extraMsg}\n`;

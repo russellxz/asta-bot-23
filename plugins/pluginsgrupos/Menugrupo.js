@@ -9,7 +9,7 @@ const handler = async (msg, { conn }) => {
   try { await conn.sendMessage2(chatId, { react: { text: "💠", key: msg.key } }, msg); } catch {}
 
   return enviarMenu(conn, chatId, msg, "menugrupo", {
-    titulo: "MENÚ DE GRUPOS",
+    titulo: "SALA DEL ESCUADRÓN",
     info: [["Prefijo actual", p]],
     secciones: [
       {
@@ -70,7 +70,7 @@ const handler = async (msg, { conn }) => {
         ]
       }
     ],
-    nota: "Panel de control grupal 🛡️"
+    nota: "Aquí manda el capitán del escuadrón 🛡️☘️"
   });
 };
 

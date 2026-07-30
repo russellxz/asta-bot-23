@@ -160,7 +160,7 @@ draw.drawImage(logo, x, y, logoWidth, logoHeight);
   out.on('finish', async () => {
     await conn.sendMessage(chatId, {
       image: { url: fileName },
-      caption: `🖼 Generado por Suki Subbots`
+      caption: `🖼 Generado por Black Clover Subbots`
     }, { quoted: msg });
     fs.unlinkSync(fileName);
   });

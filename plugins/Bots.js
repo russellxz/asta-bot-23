@@ -19,9 +19,9 @@ const handler = async (msg, { conn }) => {
   }
 
   let texto = `
-╭━━━━━━━━━━━━━━━━━━╮
-   ❦ 𝑺𝑼𝑲𝑰 𝑺𝑼𝑩𝑩𝑶𝑻𝑺 ❦
-╰━━━━━━━━━━━━━━━━━━╯
+┏━━━━━━━━━━━━━━━━━━┓
+  ☘️ 𝑩𝑳𝑨𝑪𝑲 𝑪𝑳𝑶𝑽𝑬𝑹 𝑩𝑶𝑻 ☘️
+┗━━━━━━━━━━━━━━━━━━┛
 
 🤖 *Total de subbots conectados:* ${conectados.length}
 
@@ -36,7 +36,7 @@ const handler = async (msg, { conn }) => {
     i++;
   }
 
-  texto = texto.trimEnd() + "\n\n━━━━━━━━━━━━━━━━━━\n🤖 *La Suki Bot*";
+  texto = texto.trimEnd() + "\n\n━━━━━━━━━━━━━━━━━━\n🤖 *Black Clover Bot*";
 
   return conn.sendMessage(chatId, { text: texto }, { quoted: msg });
 };

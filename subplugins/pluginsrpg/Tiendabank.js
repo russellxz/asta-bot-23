@@ -23,7 +23,7 @@ const handler = async (msg, { conn }) => {
     return conn.sendMessage(
       chatId,
       {
-        image: { url: "https://cdn.russellxz.click/4ec1a962.jpeg" },
+        image: { url: "https://cdn.russellxz.click/62061f9e.jpg" },
         caption:
           "🏦 *Tienda del Banco*\n\n" +
           "Por ahora no hay personajes decomisados en venta.\n\n" +
@@ -66,7 +66,7 @@ const handler = async (msg, { conn }) => {
   await conn.sendMessage(
     chatId,
     {
-      image: { url: "https://cdn.russellxz.click/4ec1a962.jpeg" },
+      image: { url: "https://cdn.russellxz.click/62061f9e.jpg" },
       caption: texto,
       mentions
     },

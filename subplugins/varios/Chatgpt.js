@@ -33,7 +33,7 @@ const handler = async (msg, { conn, args, command }) => {
     const respuesta = data.data.message;
 
     await conn.sendMessage(chatId, {
-      text: `🧠 *GPT-4 responde a @${userId.replace(/@s\\.whatsapp\\.net$/, "")}:*\n\n${respuesta}\n\n────────────\n🤖 _Suki Subbots_`,
+      text: `🧠 *GPT-4 responde a @${userId.replace(/@s\\.whatsapp\\.net$/, "")}:*\n\n${respuesta}\n\n────────────\n🤖 _Black Clover Subbots_`,
       mentions: [userId]
     }, { quoted: msg });
 

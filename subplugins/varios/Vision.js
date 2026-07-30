@@ -37,7 +37,7 @@ const handler = async (msg, { conn, args, command }) => {
       image: { url: imageUrl },
       caption:
         `🖼️ *Imagen generada para:* ${userMention}\n` +
-        `📌 *Prompt:* ${query}\n\n🍧 *API:* api.dorratz.com\n────────────\n🤖 _Suki Subbots_`,
+        `📌 *Prompt:* ${query}\n\n🍧 *API:* api.dorratz.com\n────────────\n🤖 _Black Clover Subbots_`,
       mentions: [participant]
     }, { quoted: msg });
 

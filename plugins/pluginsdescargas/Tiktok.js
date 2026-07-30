@@ -118,9 +118,9 @@ Ej: ${pref}${command} https://vm.tiktok.com/xxxxxx/`
     // 🎨 Caption LIMPIO — solo explicación + marca de agua
     const caption = usarBotones
       ? `
-╭━━━━━━━━━━━━━━━━━╮
+┏━━━━━━━━━━━━━━━━━┓
    ⚡ 𝗧𝗜𝗞𝗧𝗢𝗞 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥
-╰━━━━━━━━━━━━━━━━━╯
+┗━━━━━━━━━━━━━━━━━┛
 ━━━━━━━━━━━━━━━━━━
  *📥 CÓMO DESCARGAR*
 ━━━━━━━━━━━━━━━━━━
@@ -156,7 +156,7 @@ ${pieDescarga(conn)}`.trim();
       contextInfo: canal(),
           image: { url: d.cover },
           caption,
-          footer: `❦ ${getMarca(conn)} — Selecciona una opción ❦`,
+          footer: `☘️ ${getMarca(conn)} — Selecciona una opción ☘️`,
           buttons: nativeFlowButtons,
           headerType: 4,
         }, { quoted: msg });
@@ -170,7 +170,7 @@ ${pieDescarga(conn)}`.trim();
         preview = await conn.sendMessage(chatId, {
       contextInfo: canal(),
           text: caption,
-          footer: `❦ ${getMarca(conn)} — Selecciona una opción ❦`,
+          footer: `☘️ ${getMarca(conn)} — Selecciona una opción ☘️`,
           buttons: nativeFlowButtons,
         }, { quoted: msg });
       } catch (e) {
@@ -334,9 +334,9 @@ async function processSend(conn, job, asDocument, triggerMsg){
 
     // 🎨 Caption final con TODA la info del video + marca de agua
     const finalCaption =
-`╭━━━━━━━━━━━━━━━╮
+`┏━━━━━━━━━━━━━━━┓
    ⚡ 𝗧𝗜𝗞𝗧𝗢𝗞 — 𝗩𝗜𝗗𝗘𝗢
-╰━━━━━━━━━━━━━━━━╯
+┗━━━━━━━━━━━━━━━━┛
 
 📝 *Título:* ${title}
 👤 *Autor:* ${author}

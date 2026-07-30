@@ -20,7 +20,7 @@ const handler = async (msg, { conn }) => {
   try { await conn.sendMessage(chatId, { react: { text: "👑", key: msg.key } }); } catch {}
 
   return enviarMenu(conn, chatId, msg, "menuowner", {
-    titulo: "MENÚ DE OWNER",
+    titulo: "TRONO DEL REY MAGO",
     info: [["Prefijo actual", p]],
     secciones: [
       {
@@ -54,7 +54,7 @@ const handler = async (msg, { conn }) => {
         ]
       }
     ],
-    nota: "Estos comandos solo funcionan desde tu propio número 👑"
+    nota: "Solo el dueño del grimorio puede usarlos 👑☘️"
   });
 };
 

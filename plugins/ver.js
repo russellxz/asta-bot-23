@@ -76,7 +76,7 @@ const handler = async (msg, ctx = {}) => {
     let buf = Buffer.alloc(0);
     for await (const chunk of stream) buf = Buffer.concat([buf, chunk]);
 
-    const credit = "> 🔓 Recuperado por:\n`La Suki Bot`";
+    const credit = "> 🔓 Recuperado por:\n`Black Clover Bot`";
     const opts = { mimetype: mediaMsg.mimetype };
 
     if (mediaType === "image") {

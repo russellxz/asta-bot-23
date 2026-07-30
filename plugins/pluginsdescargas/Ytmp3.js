@@ -393,7 +393,7 @@ ${pieDescarga(conn)}
       contextInfo: canal(),
           image: thumbnail ? { url: thumbnail } : undefined,
           caption,
-          footer: `❦ ${getMarca(conn)} — Selecciona una opción ❦`,
+          footer: `☘️ ${getMarca(conn)} — Selecciona una opción ☘️`,
           buttons: nativeFlowButtons,
           headerType: 4
         },

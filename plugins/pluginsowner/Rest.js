@@ -24,7 +24,7 @@ const handler = async (msg, { conn }) => {
 
   // Mensaje de aviso
   await conn.sendMessage(chatId, {
-    text: "🔄 *Suki Bot se reiniciará en unos segundos...*"
+    text: "🔄 *Black Clover Bot se reiniciará en unos segundos...*"
   }, { quoted: msg });
 
   // Guardar chat para notificar luego

@@ -109,7 +109,7 @@ const handler = async (msg, { conn, args, usedPrefix, command }) => {
     `📸 *Fotos comprometedoras:* ${randNum(0,100)} (bloqueadas por ternura 🥺)\n\n` +
     `⚠️ *ACCESO TOTAL AL DISPOSITIVO CONCEDIDO* ⚠️\n\n` +
     `😂 *Es una broma jajaja*, ningún dato es real.\n` +
-    `_Cortesía de Suki Subbots 🤖_`;
+    `_Cortesía de Black Clover Subbots 🤖_`;
 
   await conn.sendMessage(chatId, {
     image: { url: ppUrl },

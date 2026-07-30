@@ -12,7 +12,7 @@ const handler = async (msg, { conn }) => {
 
     await conn.sendMessage(chatId, {
       image: { url: meme },
-      caption: "🤣 *¡Aquí tienes un meme del día!*\n\n────────────\n🤖 _Suki Subbots_"
+      caption: "🤣 *¡Aquí tienes un meme del día!*\n\n────────────\n🤖 _Black Clover Subbots_"
     }, { quoted: msg });
 
   } catch (e) {

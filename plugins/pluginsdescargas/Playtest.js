@@ -79,7 +79,7 @@ const handler = async (msg, { conn, text }) => {
   const viewsFmt = (views || 0).toLocaleString();
 
   const caption = `
-❦𝑳𝑨 𝑺𝑼𝑲𝑰 𝑩𝑶𝑻❦
+☘️ 𝑩𝑳𝑨𝑪𝑲 𝑪𝑳𝑶𝑽𝑬𝑹 𝑩𝑶𝑻 ☘️
 
 📀 𝙸𝚗𝚏𝚘 𝚍𝚎𝚕 𝚟𝚒𝚍𝚎𝚘:
 ❥ 𝑻𝒊𝒕𝒖𝒍𝒐: ${title}
@@ -94,7 +94,7 @@ const handler = async (msg, { conn, text }) => {
 ☛ 📄 Audio Doc     (4 / audiodoc)
 ☛ 📁 Video Doc     (3 / videodoc)
 
-❦𝑳𝑨 𝑺𝑼𝑲𝑰 𝑩𝑶𝑻❦
+☘️ 𝑩𝑳𝑨𝑪𝑲 𝑪𝑳𝑶𝑽𝑬𝑹 𝑩𝑶𝑻 ☘️
 `.trim();
 
   // envía preview
@@ -292,7 +292,7 @@ async function downloadVideo(conn, job, asDocument, quoted) {
     [asDocument ? "document" : "video"]: fs.readFileSync(file),
     mimetype: "video/mp4",
     fileName: `${title}.mp4`,
-    caption: asDocument ? undefined : `🎬 𝐀𝐪𝐮𝐢́ 𝐭𝐢𝐞𝐧𝐞𝐬 𝐭𝐮 𝐯𝐢𝐝𝐞𝐨~ 💫\n© 𝐋𝐚 𝐒𝐮𝐤𝐢 𝐁𝐨𝐭`
+    caption: asDocument ? undefined : `🎬 𝐀𝐪𝐮𝐢́ 𝐭𝐢𝐞𝐧𝐞𝐬 𝐭𝐮 𝐯𝐢𝐝𝐞𝐨~ 💫\n© 𝐁𝐥𝐚𝐜𝐤 𝐂𝐥𝐨𝐯𝐞𝐫 𝐁𝐨𝐭`
   }, { quoted });
 
   try { fs.unlinkSync(file); } catch {}

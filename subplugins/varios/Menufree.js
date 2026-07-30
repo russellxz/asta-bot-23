@@ -13,7 +13,7 @@ const handler = async (msg, { conn }) => {
   try { await conn.sendMessage(chatId, { react: { text: "📋", key: msg.key } }); } catch {}
 
   return enviarMenu(conn, chatId, msg, "menufree", {
-    titulo: "MENÚ FREE FIRE",
+    titulo: "ARENA DE BATALLA",
     info: [
       ["Prefijo actual", p],
       ["Úsalo", "en cada comando"]
@@ -34,7 +34,7 @@ const handler = async (msg, { conn }) => {
         ]
       }
     ],
-    nota: "Sistema personalizado para clanes FF 🎮"
+    nota: "Escuadrones de batalla listos ⚔️☘️"
   });
 };
 

@@ -1,4 +1,4 @@
-//--> Hecho por Ado para Suki :D
+//--> Hecho por Ado para Black Clover :D
 import fetch from 'node-fetch';
 
 const gemini = {

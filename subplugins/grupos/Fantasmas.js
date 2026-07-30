@@ -283,7 +283,7 @@ const handler = async (msg, { conn, args }) => {
 
   const advertencia =
 `⚠️ *Advertencia Importante*
-Este conteo solo se basa en los mensajes detectados desde que *Suki Subbots* fue agregada al grupo.
+Este conteo solo se basa en los mensajes detectados desde que *Black Clover Subbots* fue agregada al grupo.
 No refleja actividad real de todo el historial del grupo.
 
 No se incluyen admins, owners ni el bot.
