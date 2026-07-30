@@ -81,7 +81,7 @@ const handler = async (msg, { conn, wa }) => {
 
     const metadata = {
       packname: `✨ Lo Mandó Hacer: ${senderName}`,
-      author: `🦋Bot Creador: ❦La Suki 3.0 Bot❦\n🛠️ Desarrollado por: Russell XZ 💻\n📅 ${fechaStr}`,
+      author: `🦋Bot Creador: ☘️ Black Clover Bot ☘️\n🛠️ Desarrollado por: Russell XZ 💻\n📅 ${fechaStr}`,
     };
 
     const outSticker =
@@ -181,7 +181,7 @@ async function addExif(webpBuffer, metadata) {
   fs.writeFileSync(tmpIn, webpBuffer);
 
   const json = {
-    "sticker-pack-id": "suki-3.0",
+    "sticker-pack-id": "black-clover-bot",
     "sticker-pack-name": metadata.packname,
     "sticker-pack-publisher": metadata.author,
     emojis: metadata.categories || [""],

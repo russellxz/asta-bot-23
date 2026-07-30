@@ -10,7 +10,7 @@ const handler = async (msg, { conn }) => {
   try { await conn.sendMessage(chatId, { react: { text: "✨", key: msg.key } }); } catch {}
 
   return enviarMenu(conn, chatId, msg, "menu", {
-    titulo: "MENÚ GENERAL",
+    titulo: "GRIMORIO PRINCIPAL",
     info: [
       ["Prefijo actual", p],
       ["Úsalo", "en cada comando"]
@@ -102,7 +102,7 @@ const handler = async (msg, { conn }) => {
         ]
       }
     ],
-    nota: "Gracias por usarme. Eres adorable 💖"
+    nota: "El trébol de cinco hojas está de tu lado ☘️"
   });
 };
 

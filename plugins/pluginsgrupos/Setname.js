@@ -112,7 +112,7 @@ const handler = async (msg, { conn, args }) => {
 
   if (!nuevoNombre) {
     await conn.sendMessage(chatId, {
-      text: "ℹ️ *Debes escribir o responder con el nuevo nombre del grupo.*\n\nEjemplos:\n• *.setname La Familia de Suki 💕*\n• Responde a un mensaje con *.setname*"
+      text: "ℹ️ *Debes escribir o responder con el nuevo nombre del grupo.*\n\nEjemplos:\n• *.setname La Familia de Black Clover 💕*\n• Responde a un mensaje con *.setname*"
     }, { quoted: msg });
     return;
   }

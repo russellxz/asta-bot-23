@@ -42,7 +42,7 @@ const handler = async (msg, { conn }) => {
   }
 
   // Armar mensaje
-  let texto = `🐾 *🏆 TOP MASCOTAS - LA SUKI BOT 🏆*\n\n`;
+  let texto = `🐾 *🏆 TOP MASCOTAS - BLACK CLOVER BOT 🏆*\n\n`;
   ranking.forEach((user, index) => {
     texto += `*${index + 1}.* @${user.numero}\n`;
     texto += `   📊 *Total Nivel:* ${user.totalNivel}\n`;

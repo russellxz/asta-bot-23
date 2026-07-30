@@ -5,7 +5,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const MENU_URL = "https://cdn.russellxz.click/27293a78.jpeg";
+const MENU_URL = "https://cdn.russellxz.click/698e895f.jpg";
 
 const PRECIOS = {
   1: 25000,

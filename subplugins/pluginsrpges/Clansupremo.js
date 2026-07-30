@@ -1,7 +1,7 @@
 // plugins/clansupremo.js
 // Uso: .clansupremo <Nombre del Clan> <nivelMinParaUnirse>
 // Solo owners (según global.isOwner / fromMe / botID).
-// No cobra. Crea el clan "supremo" (único) con banner especial y líder "La Suki Bot".
+// No cobra. Crea el clan "supremo" (único) con banner especial y líder "Black Clover Bot".
 
 import fs from 'fs';
 import path from 'path';
@@ -92,10 +92,10 @@ const handler = async (msg, { conn, args }) => {
     nivelClan: 200, // nivel inicial para el supremo
     minNivelParaUnirse: nivelMin,
     bodegaCreditos: 0,
-    // Sin líder humano: lo representa la Suki Bot
+    // Sin líder humano: lo representa la Black Clover Bot
     lider: {
       numero: "BOT",
-      nombre: "La Suki Bot",
+      nombre: "Black Clover Bot",
       apellido: "",
       nivel: 999
     },
@@ -110,7 +110,7 @@ const handler = async (msg, { conn, args }) => {
   const caption =
 `✅ *Clan supremo creado*
 🏷️ Nombre: *${clan.nombre}*
-👑 Líder: La Suki Bot
+👑 Líder: Black Clover Bot
 🎚️ Nivel del clan: ${clan.nivelClan}
 🧰 Bodega: 0 créditos
 🎯 Nivel mínimo para unirse: *${nivelMin}*

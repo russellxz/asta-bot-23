@@ -41,7 +41,7 @@ const handler = async (msg, { conn }) => {
     const miembrosCount = Array.isArray(supremo.miembros) ? supremo.miembros.length : 0;
     const liderStr = supremo.lider
       ? (supremo.lider.numero === "BOT"
-          ? "La Suki Bot"
+          ? "Black Clover Bot"
           : (supremo.lider.numero ? `@${supremo.lider.numero}` : (supremo.lider.nombre || "—")))
       : "—";
 
@@ -103,7 +103,7 @@ const handler = async (msg, { conn }) => {
     let liderStr = "—";
     if (c.lider) {
       if (c.lider.numero === "BOT") {
-        liderStr = "La Suki Bot";
+        liderStr = "Black Clover Bot";
       } else if (c.lider.numero) {
         liderStr = `@${c.lider.numero}`;
         mentions.add(`${c.lider.numero}@s.whatsapp.net`);

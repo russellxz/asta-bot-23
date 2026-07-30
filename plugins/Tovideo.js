@@ -140,7 +140,7 @@ const handler = async (msg, { conn, command, wa }) => {
     await conn.sendMessage(chatId, {
       video: fs.readFileSync(output),
       mimetype: "video/mp4",
-      caption: "✅ *Sticker convertido a video.*\n\n🍧 _La Suki Bot_"
+      caption: "✅ *Sticker convertido a video.*\n\n🍧 _Black Clover Bot_"
     }, { quoted: msg });
 
     try { await conn.sendMessage(chatId, { react: { text: "✅", key: msg.key } }); } catch {}

@@ -51,7 +51,7 @@ const handler = async (msg, { conn }) => {
       mensaje += `😢 *@${solo.split("@")[0]} se quedó sin pareja...* 💔\n`;
     }
 
-    mensaje += `\n🌟 *¿Será el inicio de una gran historia de amor?*\n\n────────────\n💘 _Suki Subbots_`;
+    mensaje += `\n🌟 *¿Será el inicio de una gran historia de amor?*\n\n────────────\n💘 _Black Clover Subbots_`;
 
     let imageBuffer = null;
     try {

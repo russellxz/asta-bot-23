@@ -1,6 +1,6 @@
 // comandos/letra.js — Lyrics Search (solo texto)
 // ✅ Responde con: Título / Artista / Álbum / Letra
-// ✅ Branding: La Suki Bot + SkyUltraPlus API
+// ✅ Branding: Black Clover Bot + SkyUltraPlus API
 // ✅ No descarga archivos
 
 "use strict";

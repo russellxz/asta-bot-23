@@ -111,7 +111,7 @@ const handler = async (msg, { conn, wa }) => {
     }, { quoted: msg });
 
     await conn.sendMessage(chatId, {
-      text: `✅ *Audio reparado exitosamente*\n⏱️ *Tiempo de reparación:* ${endTime}s\n\n🎧 *Procesado por La Suki Bot*`
+      text: `✅ *Audio reparado exitosamente*\n⏱️ *Tiempo de reparación:* ${endTime}s\n\n🎧 *Procesado por Black Clover Bot*`
     }, { quoted: msg });
 
     sentReact = '✅';

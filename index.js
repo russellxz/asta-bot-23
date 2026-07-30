@@ -1,5 +1,5 @@
 let canalId = ["120363266665814365@newsletter"];  
-let canalNombre = ["👑 LA SUKI BOT 👑"]
+let canalNombre = ["👑 BLACK CLOVER BOT 👑"]
   function setupConnection(conn) {
   conn.sendMessage2 = async (chat, content, m, options = {}) => {
     const firstChannel = { 
@@ -155,10 +155,80 @@ const arrancarSubbots = () => {
   __iniciarSubbots();
 };
 
+// ☘️ ── CONSOLA BLACK CLOVER BOT ── luces RGB animadas ──────────────────
+// Solo pintura de consola: no toca la conexión ni ningún dato del bot.
+
+// Pausa sincrónica (el banner se dibuja antes de pedir el número, así que
+// no hay nada del bot esperando en la cola del event loop).
+const dormirConsola = (ms) => {
+  try {
+    Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms);
+  } catch {
+    const fin = Date.now() + ms;
+    while (Date.now() < fin);
+  }
+};
+
+// HSL → #rrggbb, para recorrer todo el arcoíris con un solo número
+const colorHSL = (h, s = 100, l = 55) => {
+  const S = s / 100, L = l / 100;
+  const c = (1 - Math.abs(2 * L - 1)) * S;
+  const x = c * (1 - Math.abs(((h / 60) % 2) - 1));
+  const m = L - c / 2;
+  const [r, g, b] =
+    h < 60  ? [c, x, 0] : h < 120 ? [x, c, 0] :
+    h < 180 ? [0, c, x] : h < 240 ? [0, x, c] :
+    h < 300 ? [x, 0, c] : [c, 0, x];
+  const hex = (v) => Math.round((v + m) * 255).toString(16).padStart(2, "0");
+  return `#${hex(r)}${hex(g)}${hex(b)}`;
+};
+
+// Pinta cada carácter con un color distinto; `desfase` mueve las luces
+const pintarRGB = (linea, desfase) =>
+  [...linea]
+    .map((ch, i) => (ch === " " ? ch : chalk.hex(colorHSL((i * 7 + desfase * 18) % 360))(ch)))
+    .join("");
+
+// Tira de luces que va corriendo debajo del banner
+const tiraLuces = (ancho, desfase) =>
+  Array.from({ length: ancho }, (_, i) =>
+    chalk.hex(colorHSL((i * 12 + desfase * 25) % 360))((i + desfase) % 3 === 0 ? "●" : "•")
+  ).join("");
+
+// Banner animado: repinta las mismas líneas subiendo el cursor, así las
+// luces se mueven sin llenar la consola de copias.
+const bannerRGB = (texto, { cuadros = 26, ms = 55, subtitulo = "" } = {}) => {
+  let arte;
+  try {
+    arte = figlet.textSync(texto, { font: "ANSI Shadow" }).split("\n");
+  } catch {
+    arte = figlet.textSync(texto, { font: "Standard" }).split("\n");
+  }
+  arte = arte.filter((l) => l.trim() !== "");
+  const ancho = Math.max(...arte.map((l) => l.length), 40);
+  const animar = Boolean(process.stdout.isTTY);
+  const total = animar ? cuadros : 1;
+
+  for (let f = 0; f < total; f++) {
+    const bloque = [
+      "",
+      ...arte.map((l) => pintarRGB(l, f)),
+      tiraLuces(Math.min(ancho, 60), f),
+      subtitulo ? chalk.hex(colorHSL((f * 30) % 360)).bold(subtitulo) : "",
+      ""
+    ];
+    // Sin TTY (pm2, logs a fichero) se imprime un solo cuadro y sin códigos
+    // de posición, para no ensuciar el archivo de log.
+    if (animar && f > 0) process.stdout.write(`\x1b[${bloque.length}A`);
+    for (const l of bloque) process.stdout.write(animar ? `\x1b[2K${l}\n` : `${l}\n`);
+    if (animar && f < total - 1) dormirConsola(ms);
+  }
+};
+
 // 🎨 Banner (ya con TODO cargado)
-console.log(chalk.cyan(figlet.textSync("Suki 3.0 Bot", { font: "Standard" })));
+bannerRGB("BLACK CLOVER", { subtitulo: "   ☘️  B L A C K   C L O V E R   B O T  ☘️   ·   by Russell XZ" });
 console.log(
-  chalk.green(`\n✅ ${global.plugins.length} plugins del bot principal y ` +
+  chalk.green(`✅ ${global.plugins.length} plugins del bot principal y ` +
     `${(global.subPlugins || []).length} de subbots cargados.\n`)
 );
 
@@ -245,7 +315,7 @@ let phoneNumber = "";
     // 🔗 Instrucciones de vinculación: van de ÚLTIMO, cuando ya no queda
     // ningún plugin por cargar, para que se vean limpias en la consola.
     recuadro("cyan", [
-      chalk.cyan.bold("🔗  CÓMO VINCULAR TU BOT"),
+      chalk.cyan.bold("☘️  CÓMO VINCULAR TU BLACK CLOVER BOT"),
       "",
       chalk.yellow("1)") + chalk.white(" Escribe abajo tu número CON código de país,"),
       chalk.gray("   sin +, sin espacios y sin guiones."),
@@ -407,7 +477,7 @@ let phoneNumber = "";
 
       setupConnection(sock);
 
-      // 🌐 INICIAR API WEB DE LA SUKI BOT
+      // 🌐 INICIAR API WEB DE BLACK CLOVER BOT
 try {
   startWebServer(sock);
 } catch (e) {
@@ -449,7 +519,7 @@ try {
             const code = await sock.requestPairingCode(phoneNumber);
             const bonito = code.match(/.{1,4}/g).join(" - ");
             recuadro("yellow", [
-              chalk.yellow.bold("🔑  TU CÓDIGO DE VINCULACIÓN"),
+              chalk.yellow.bold("🔑  TU HECHIZO DE VINCULACIÓN · BLACK CLOVER BOT"),
               "",
               chalk.greenBright.bold("      " + bonito),
               "",
@@ -673,7 +743,7 @@ sock.ev.on("messages.upsert", async ({ messages }) => {
 
 
 
-/* === STICKER → COMANDO (GLOBAL) usando ./comandos.json — para Suki === */
+/* === STICKER → COMANDO (GLOBAL) usando ./comandos.json — para Black Clover === */
 try {
   const st =
     m.message?.stickerMessage ||
@@ -2970,7 +3040,11 @@ if (isGroup) {
 
 sock.ev.on("connection.update", async ({ connection }) => {
   if (connection === "open") {
-    console.log(chalk.green("✅ Conectado correctamente a WhatsApp."));
+    bannerRGB("CONECTADO", {
+      cuadros: 20,
+      subtitulo: "   ☘️  BLACK CLOVER BOT EN LÍNEA  ☘️   ·   grimorio abierto"
+    });
+    console.log(chalk.green("✅ Conectado correctamente a WhatsApp.\n"));
 
     // 🤖 Red de seguridad: si por lo que sea aún no arrancaron los subbots
     // (vinculación recién terminada, reinicio raro), arrancan aquí.
@@ -2983,7 +3057,7 @@ sock.ev.on("connection.update", async ({ connection }) => {
         const data = JSON.parse(fs.readFileSync(restarterFile, "utf-8"));
         if (data.chatId) {
           await sock.sendMessage(data.chatId, {
-            text: "✅ *Suki Bot 3.0 está en línea nuevamente* 🚀"
+            text: "✅ *Black Clover Bot está en línea nuevamente* 🚀"
           });
           console.log(chalk.yellow("📢 Aviso enviado al grupo del reinicio."));
           fs.unlinkSync(restarterFile); // 🧹 Eliminar archivo tras el aviso
@@ -2994,7 +3068,7 @@ sock.ev.on("connection.update", async ({ connection }) => {
     }
 
   } else if (connection === "close") {
-    console.log(chalk.red("❌ Conexión cerrada. Reintentando en 5 segundos..."));
+    console.log(chalk.red("☘️ ❌ Grimorio cerrado. Reintentando en 5 segundos..."));
     setTimeout(startBot, 5000);
   }
 });

@@ -214,7 +214,7 @@ const handler = async (msg, { conn, args }) => {
 
 ✦ 𝗦𝗼𝘂𝗿𝗰𝗲: ${API_BASE}
 ────────────
-🤖 𝙎𝙪𝙠𝙞 𝘽𝙤𝙩`,
+🤖 𝘽𝙡𝙖𝙘𝙠 𝘾𝙡𝙤𝙫𝙚𝙧 𝘽𝙤𝙩`,
       quotedBase: msg,
       previewKey: preview.key,
       createdAt: Date.now(),

@@ -9,7 +9,7 @@ const handler = async (msg, { conn }) => {
   try { await conn.sendMessage2(chatId, { react: { text: "✨", key: msg.key } }, msg); } catch {}
 
   await enviarMenu(conn, chatId, msg, "menurpg", {
-    titulo: "MENÚ RPG",
+    titulo: "REINO DEL TRÉBOL · RPG",
     info: [
       ["Prefijo actual", p],
       ["Úsalo", "antes de cada comando"]
@@ -112,7 +112,7 @@ const handler = async (msg, { conn }) => {
         ]
       }
     ],
-    nota: "Disfruta el mundo RPG. ¡Suerte, héroe! ⚔️"
+    nota: "¡Nunca te rindas, caballero mágico! ⚔️☘️"
   });
 
   try { await conn.sendMessage2(chatId, { react: { text: "✅", key: msg.key } }, msg); } catch {}

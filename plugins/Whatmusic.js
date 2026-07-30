@@ -146,7 +146,7 @@ const handler = async (msg, { conn, wa }) => {
 
     const banner =
 `╔══════════════════╗
-║ ✦ 𝗟𝗮 𝗦𝘂𝗸𝗶 𝗕𝗼𝘁 ✦
+║ ✦ 𝗕𝗹𝗮𝗰𝗸 𝗖𝗹𝗼𝘃𝗲𝗿 𝗕𝗼𝘁 ✦
 ╚══════════════════╝
 
 🎵 *Canción detectada*

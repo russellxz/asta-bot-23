@@ -9,7 +9,7 @@ const handler = async (msg, { conn }) => {
   try { await conn.sendMessage2(chatId, { react: { text: "👑", key: msg.key } }, msg); } catch {}
 
   return enviarMenu(conn, chatId, msg, "menuowner", {
-    titulo: "MENÚ DE OWNER",
+    titulo: "TRONO DEL REY MAGO",
     info: [["Prefijo actual", p]],
     secciones: [
       {
@@ -51,7 +51,7 @@ const handler = async (msg, { conn }) => {
         items: [`${p}addfactura`, `${p}delfactura`, `${p}facpaga`, `${p}verfac`]
       }
     ],
-    nota: "Modo Dios activado 👑"
+    nota: "Poder del Rey Mago activado 👑☘️"
   });
 };
 

@@ -668,9 +668,9 @@ async function downloadVideo(conn, job, asDocument, quoted) {
   // 🎨 Caption final con TODA la info + marca de agua
   const qualityLabel = `${q}p`;
   const finalCaption =
-`╭━━━━━━━━━━━━━━━━━╮
+`┏━━━━━━━━━━━━━━━━━┓
    🎬 𝗩𝗜𝗗𝗘𝗢 𝗗𝗘𝗦𝗖𝗔𝗥𝗚𝗔𝗗𝗢
-╰━━━━━━━━━━━━━━━━━━╯
+┗━━━━━━━━━━━━━━━━━━┛
 
 📝 *Título:* ${title}
 👤 *Autor:* ${authorName}

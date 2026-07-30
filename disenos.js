@@ -5,12 +5,12 @@
 //  • Cada subbot guarda la suya en subbots/data/<numero>/personalizacion.json
 //
 // La personalización incluye:
-//  • diseno   → 1..7 (de diseno.json)
-//  • nombre   → marca que reemplaza a "La Suki Bot" / "Suki Subbots"
+//  • diseno   → 1..12 (de diseno.json)
+//  • nombre   → marca que reemplaza a "Black Clover Bot" / "Black Clover Subbots"
 //  • media    → imagen o video (gif) global y/o por menú
 //
 // Los menús no traen texto decorado: entregan su CONTENIDO (secciones e items)
-// y aquí se le aplica el diseño elegido. Así los 7 diseños sirven para todos
+// y aquí se le aplica el diseño elegido. Así los 12 diseños sirven para todos
 // los menús y para los comandos de descarga sin duplicar nada.
 
 import fs from "fs";
@@ -47,25 +47,34 @@ export const MENU_NOMBRES = {
 // Media de fábrica por menú (la que traía cada uno antes de personalizar).
 // tipo "video" se envía como GIF animado.
 const MEDIA_FABRICA_MAIN = {
-  menu: { url: "https://cdn.russellxz.click/770fe00e.mp4", tipo: "video" },
-  menugrupo: { url: "https://cdn.russellxz.click/8eef84e4.mp4", tipo: "video" },
-  menuaudio: { url: "https://cdn.russellxz.click/18bf4be2.mp4", tipo: "video" },
-  menurpg: { url: "https://cdn.russellxz.click/d744b5bf.jpeg", tipo: "image" },
-  menufree: { url: "https://cdn.russellxz.click/bdd4fca0.jpeg", tipo: "image" },
-  allmenu: { url: "https://cdn.russellxz.click/40df9bcb.jpeg", tipo: "image" },
-  menuowner: { url: "https://cdn.russellxz.click/a0b60c86.mp4", tipo: "video" }
+  menu: { url: "https://cdn.russellxz.click/5b6dc436.jpg", tipo: "image" },
+  menugrupo: { url: "https://cdn.russellxz.click/47b8d38c.jpg", tipo: "image" },
+  menuaudio: { url: "https://cdn.russellxz.click/3d9ca1f2.jpg", tipo: "image" },
+  menurpg: { url: "https://cdn.russellxz.click/eeaf87bf.jpg", tipo: "image" },
+  menufree: { url: "https://cdn.russellxz.click/6760f2de.jpg", tipo: "image" },
+  allmenu: { url: "https://cdn.russellxz.click/15c626b8.jpg", tipo: "image" },
+  menuowner: { url: "https://cdn.russellxz.click/e3b729b2.jpg", tipo: "image" }
 };
 
+// Los subbots llevan todos la misma portada del escuadrón.
+const MEDIA_SUB = { url: "https://cdn.russellxz.click/94533192.jpg", tipo: "image" };
+
 const MEDIA_FABRICA_SUB = {
-  menurpg: { url: "https://cdn.russellxz.click/d744b5bf.jpeg", tipo: "image" }
+  menu: { ...MEDIA_SUB },
+  menugrupo: { ...MEDIA_SUB },
+  menuaudio: { ...MEDIA_SUB },
+  menurpg: { ...MEDIA_SUB },
+  menufree: { ...MEDIA_SUB },
+  allmenu: { ...MEDIA_SUB },
+  menuowner: { ...MEDIA_SUB }
 };
 
 // Cualquier menú sin entrada propia usa esta
-const MEDIA_FABRICA_DEFECTO_MAIN = { url: "https://cdn.russellxz.click/40df9bcb.jpeg", tipo: "image" };
-const MEDIA_FABRICA_DEFECTO_SUB = { url: "https://cdn.russellxz.click/c678c800.jpg", tipo: "image" };
+const MEDIA_FABRICA_DEFECTO_MAIN = { url: "https://cdn.russellxz.click/15c626b8.jpg", tipo: "image" };
+const MEDIA_FABRICA_DEFECTO_SUB = { ...MEDIA_SUB };
 
-export const MARCA_FABRICA_MAIN = "La Suki Bot";
-export const MARCA_FABRICA_SUB = "Suki Subbots";
+export const MARCA_FABRICA_MAIN = "Black Clover Bot";
+export const MARCA_FABRICA_SUB = "Black Clover Subbots";
 
 // ------------------------------------------------------------
 // Canal oficial: es lo que hace salir el botón "Ver canal" debajo
@@ -74,7 +83,7 @@ export const MARCA_FABRICA_SUB = "Suki Subbots";
 // ------------------------------------------------------------
 export const CANAL = {
   id: "120363266665814365@newsletter",
-  nombre: "👑 LA SUKI BOT 👑"
+  nombre: "☘️ BLACK CLOVER BOT ☘️"
 };
 
 /**

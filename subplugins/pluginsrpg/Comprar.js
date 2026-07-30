@@ -78,7 +78,7 @@ const handler = async (msg, { conn, args }) => {
   fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
 
   // 📷 Avatar fallback
-  let avatarURL = "https://cdn.russellxz.click/f20c1249.jpeg";
+  let avatarURL = "https://cdn.russellxz.click/43f6a610.jpg";
   try {
     const pp = await conn.profilePictureUrl(sender, "image");
     if (pp) avatarURL = pp;

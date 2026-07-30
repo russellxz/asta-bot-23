@@ -1,7 +1,7 @@
 // commands/xvideos.js — XVideos con opciones (👍 video / ❤️ documento o 1 / 2)
 // ✅ Multiuso (10 minutos)
 // ✅ Reacciones + respuestas citadas
-// ✅ Branding: Suki Subbots + API Link
+// ✅ Branding: Black Clover Subbots + API Link
 // ✅ SD por defecto, añade 'hd' para alta calidad
 
 "use strict";

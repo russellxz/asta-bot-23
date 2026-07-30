@@ -31,7 +31,7 @@ const handler = async (msg, { conn, args, command }) => {
 
     const image = data.data[0]; // Usamos la primera imagen
 
-    const caption = `🖼️ *Imagen generada de:* ${text}\n🔗 *Fuente:* ${image.origin.website.url}\n\n────────────\n🤖 _Suki Subbots_`;
+    const caption = `🖼️ *Imagen generada de:* ${text}\n🔗 *Fuente:* ${image.origin.website.url}\n\n────────────\n🤖 _Black Clover Subbots_`;
 
     await conn.sendMessage(chatId, {
       image: { url: image.url },

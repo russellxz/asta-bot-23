@@ -67,7 +67,7 @@ Ej: .pagar 2000
   if (totalPrestamos === 0) {
     caption += `\n📌 No hay usuarios con préstamos activos ahora mismo.`;
     return conn.sendMessage(chatId, {
-      image: { url: "https://cdn.russellxz.click/00877f21.jpeg" },
+      image: { url: "https://cdn.russellxz.click/5bcd7d99.jpg" },
       caption,
       quoted: msg
     });
@@ -120,7 +120,7 @@ Ej: .pagar 2000
     `   • Pendiente: ${sumaPendiente} créditos`;
 
   await conn.sendMessage(chatId, {
-    image: { url: "https://cdn.russellxz.click/00877f21.jpeg" },
+    image: { url: "https://cdn.russellxz.click/5bcd7d99.jpg" },
     caption,
     mentions,
     quoted: msg

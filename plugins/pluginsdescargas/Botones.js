@@ -73,9 +73,9 @@ const handler = async (msg, { conn, args }) => {
     return conn.sendMessage(chatId, {
       contextInfo: canal(),
       text:
-`╭━━━━━━━━━━━━━━━━━━━━╮
+`┏━━━━━━━━━━━━━━━━━━━━┓
    ⚙️ ESTADO DE BOTONES
-╰━━━━━━━━━━━━━━━━━━━━╯
+┗━━━━━━━━━━━━━━━━━━━━┛
 
 📍 Estado actual: ${estado}
 
@@ -135,9 +135,9 @@ const handler = async (msg, { conn, args }) => {
   return conn.sendMessage(chatId, {
       contextInfo: canal(),
     text:
-`╭━━━━━━━━━━━━━━━━━━━━╮
+`┏━━━━━━━━━━━━━━━━━━━━┓
    ⚙️ BOTONES ACTUALIZADOS
-╰━━━━━━━━━━━━━━━━━━━━╯
+┗━━━━━━━━━━━━━━━━━━━━┛
 
 ${emoji} Estado: ${estado}
 

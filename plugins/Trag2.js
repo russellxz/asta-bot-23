@@ -1,6 +1,6 @@
 // plugins/trag2.js
 // Convierte un guar.json con estructura DIFERENTE (de otro bot) en archivos físicos
-// compatibles con el sistema actual de Suki (guar_files.json + guar_media/).
+// compatibles con el sistema actual de Black Clover (guar_files.json + guar_media/).
 //
 // 📦 Estructura ORIGINAL del archivo a migrar (otro bot):
 // {
@@ -12,12 +12,12 @@
 //   }
 // }
 //
-// ✅ Resultado: lo convierte al formato compatible con Suki:
+// ✅ Resultado: lo convierte al formato compatible con Black Clover:
 // - Crea archivo físico en ./guar_media/<palabra>/<timestamp>_<rand>.<ext>
 // - Añade entrada en ./guar_files.json con la ruta del archivo
 //
 // 📂 Lee desde: ./guar2.json   (puedes subir el archivo del otro bot ahí)
-// 📂 Escribe a: ./guar_files.json  (mismo que usa Suki)
+// 📂 Escribe a: ./guar_files.json  (mismo que usa Black Clover)
 // 📂 Archivos: ./guar_media/<palabra>/...
 //
 // Uso:
@@ -32,7 +32,7 @@ import crypto from 'crypto';
 
 // 📂 Rutas
 const RUTA_VIEJA = path.resolve("./guar2.json");           // guar.json del otro bot
-const RUTA_NUEVA = path.resolve("./guar_files.json");      // guar de Suki (ligero)
+const RUTA_NUEVA = path.resolve("./guar_files.json");      // guar de Black Clover (ligero)
 const MEDIA_ROOT = path.resolve("./guar_media");           // carpeta física
 
 function mimeToExt(mime, fallback = "bin") {
@@ -148,7 +148,7 @@ const handler = async (msg, { conn, args }) => {
   // Decidir cuántos migrar
   const clavesAMigrar = migrarTodo ? todasLasClaves : todasLasClaves.slice(0, cantidad);
 
-  // ====== Cargar guar_files.json (destino de Suki) ======
+  // ====== Cargar guar_files.json (destino de Black Clover) ======
   let dbNueva = {};
   if (fs.existsSync(RUTA_NUEVA)) {
     try {
@@ -232,7 +232,7 @@ const handler = async (msg, { conn, args }) => {
       const userClean = String(entry.savedBy || entry.user || entry.de || "")
         .replace(/[^0-9]/g, "");
 
-      // Crear entrada compatible con Suki
+      // Crear entrada compatible con Black Clover
       const newEntry = {
         type: tipo,
         path: relativePath,
@@ -246,7 +246,7 @@ const handler = async (msg, { conn, args }) => {
         migratedFrom: "guar2.json"
       };
 
-      // Si la palabra clave ya existía en Suki, se añade al array (no se sobreescribe)
+      // Si la palabra clave ya existía en Black Clover, se añade al array (no se sobreescribe)
       if (Array.isArray(dbNueva[paquete])) {
         dbNueva[paquete].push(newEntry);
         paquetesYaExistian++;
@@ -283,7 +283,7 @@ const handler = async (msg, { conn, args }) => {
   // ====== Mensaje de resultado ======
   const restantes = Object.keys(dbVieja).length;
   let texto = `✅ *Migración trag2 completada*\n\n`;
-  texto += `📦 Paquetes nuevos en Suki: *${paquetesMigrados}*\n`;
+  texto += `📦 Paquetes nuevos en Black Clover: *${paquetesMigrados}*\n`;
   if (paquetesYaExistian > 0) {
     texto += `🔁 Paquetes añadidos a existentes: *${paquetesYaExistian}*\n`;
   }

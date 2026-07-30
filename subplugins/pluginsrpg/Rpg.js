@@ -36,7 +36,7 @@ const handler = async (msg, { conn, args }) => {
     "🐾 Asignando compañero mascota...",
     "💳 Generando tus créditos de bienvenida...",
     "✅ Registro casi completo...",
-    "🎉 ¡Bienvenido al mundo RPG de *La Suki Bot*!"
+    "🎉 ¡Bienvenido al mundo RPG de *Black Clover Bot*!"
   ];
 
   let { key } = await conn.sendMessage(chatId, { text: steps[0] }, { quoted: msg });
@@ -94,7 +94,7 @@ const handler = async (msg, { conn, args }) => {
   db.usuarios.push(usuario);
   fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
 
-  const texto = `🎉 *¡Bienvenido al RPG de La Suki Bot!*\n\n` +
+  const texto = `🎉 *¡Bienvenido al RPG de Black Clover Bot!*\n\n` +
                 `👤 *Nombre:* ${nombre} ${apellido}\n` +
                 `📅 *Edad:* ${edad} años\n` +
                 `🎂 *Fecha de Nacimiento:* ${fechaNacimiento}\n` +
@@ -112,7 +112,7 @@ const handler = async (msg, { conn, args }) => {
                 `¡Empieza tu aventura ahora! 🚀`;
 
   await conn.sendMessage(chatId, {
-    image: { url: "https://cdn.russellxz.click/3f6baa71.jpeg" },
+    image: { url: "https://cdn.russellxz.click/083c99f9.jpg" },
     caption: texto
   }, { quoted: msg });
 

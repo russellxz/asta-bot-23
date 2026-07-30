@@ -132,9 +132,9 @@ async function sendMedia(conn, job, asDocument, triggerMsg) {
 
     // 🎨 Caption final con TODA la info + marca de agua
     const finalCaption =
-`╭━━━━━━━━━━━━━━━━━━━━╮
+`┏━━━━━━━━━━━━━━━━━━━━┓
    ⚡ 𝗫 / 𝗧𝗪𝗜𝗧𝗧𝗘𝗥 — ${tipo.toUpperCase()}
-╰━━━━━━━━━━━━━━━━━━━━╯
+┗━━━━━━━━━━━━━━━━━━━━┛
 
 👤 *Autor:* ${authorName} ${username}
 📊 *Estadísticas:* ❤️ ${likes} · 💬 ${replies} · 🔁 ${retweets}
@@ -291,7 +291,7 @@ ${pieDescarga(conn)}`.trim();
         preview = await conn.sendMessage(chatId, {
       contextInfo: canal(),
           text: caption,
-          footer: `❦ ${getMarca(conn)} — Selecciona una opción ❦`,
+          footer: `☘️ ${getMarca(conn)} — Selecciona una opción ☘️`,
           buttons: nativeFlowButtons,
         }, { quoted: msg });
       } catch (e) {

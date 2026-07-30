@@ -79,7 +79,7 @@ const handler = async (msg, { conn, args }) => {
 `🚫 *No puedes transferir: tienes una deuda activa con el banco.*
 
 😒 *“No pagas tu deuda y ya quieres transferir… mala paga.”*
-🏦 *El Banco de La Suki* te espera con tu pago.
+🏦 *El Banco de Black Clover* te espera con tu pago.
 
 🧮 *Deuda pendiente:* ${pendiente} créditos
 📅 *Fecha límite:* ${venceTxt}

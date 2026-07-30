@@ -54,7 +54,7 @@ const handler = async (msg, { conn }) => {
 
   const liderStr = clan.lider
     ? (clan.lider.numero === "BOT"
-        ? "La Suki Bot"
+        ? "Black Clover Bot"
         : `@${clan.lider.numero}`)
     : "—";
 

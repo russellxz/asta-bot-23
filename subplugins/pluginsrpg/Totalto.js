@@ -36,7 +36,7 @@ const handler = async (msg, { conn }) => {
   }
 
   const texto =
-`📊 *TOTALES RPG • La Suki Bot*
+`📊 *TOTALES RPG • Black Clover Bot*
 
 👥 *Usuarios registrados:* ${usuarios.length}
 

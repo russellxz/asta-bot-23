@@ -1,5 +1,5 @@
 // ============================================================
-// 🤖 SUBBOTS.JS — Núcleo del sistema de Subbots de La Suki
+// 🤖 SUBBOTS.JS — Núcleo del sistema de Subbots de Black Clover
 // ============================================================
 // Sistema independiente del bot principal:
 //  - Sesiones propias:   ./subbots/sessions/<numero>/
@@ -25,7 +25,7 @@ const DATA_DIR = path.join(SUB_ROOT, "data");
 const PLUGINS_DIR = path.resolve("./subplugins");
 
 export const DEFAULT_SUB_PREFIXES = [".", "#", "/"];
-const MENU_IMAGE = "https://cdn.russellxz.click/c678c800.jpg";
+const MENU_IMAGE = "https://cdn.russellxz.click/94533192.jpg";
 const CODE_VIDEO = "https://cdn.russellxz.click/76b170f5.mp4";
 
 const DIGITS = (s = "") => String(s || "").replace(/[^0-9]/g, "");
@@ -249,11 +249,11 @@ function buildInstructions(number) {
   const cfg = getSubConfig(number);
   const p = cfg.prefixes[0] || ".";
   return `
-╭━━━━━━━━━━━━━━━━━━╮
-   ❦ 𝑺𝑼𝑲𝑰 𝑺𝑼𝑩𝑩𝑶𝑻𝑺 ❦
-╰━━━━━━━━━━━━━━━━━━╯
+┏━━━━━━━━━━━━━━━━━━┓
+  ☘️ 𝑩𝑳𝑨𝑪𝑲 𝑪𝑳𝑶𝑽𝑬𝑹 𝑩𝑶𝑻 ☘️
+┗━━━━━━━━━━━━━━━━━━┛
 
-🎉 *¡Bienvenido al sistema de Subbots de La Suki!*
+🎉 *¡Bienvenido al escuadrón de Black Clover!* ☘️
 Tu número ya está conectado como *subbot* ✅
 
 📌 *Prefijos por defecto:* .  #  /
@@ -296,11 +296,11 @@ un usuario para que el subbot le responda en
 Tu subbot puede tener tu propia cara y tu propio nombre:
 
 ✨ *${p}setmenu* → abre el menú de personalización y elige:
-• 🎨 Uno de los *7 diseños* para todos tus menús
+• 🎨 Uno de los *12 diseños* para todos tus menús
    y para los comandos de descarga.
 • 🖼️ Tu *imagen o video* (se usa como GIF) para todos
    los menús, o una distinta para cada menú.
-• ✏️ El *nombre de tu bot* (reemplaza la marca Suki
+• ✏️ El *nombre de tu bot* (reemplaza la marca Black Clover
    en los menús y en las descargas).
 • 📸 Tu *foto de perfil*.
 
@@ -315,7 +315,7 @@ Tu subbot puede tener tu propia cara y tu propio nombre:
 • *${p}delwelcome* → borra los textos personalizados.
 
 ━━━━━━━━━━━━━━━━━━
-🤖 *Suki Subbots* — disfruta tu bot 💖
+🤖 *Black Clover Subbots* — disfruta tu bot 💖
 ━━━━━━━━━━━━━━━━━━`.trim();
 }
 
@@ -1950,7 +1950,7 @@ async function connectSubbot(num, entry) {
       const goOffline = async () => {
         try {
           const me = sock.authState?.creds?.me;
-          if (me && !me.name) me.name = sock.user?.name || "Suki Subbot";
+          if (me && !me.name) me.name = sock.user?.name || "Black Clover Subbot";
           await sock.sendPresenceUpdate("unavailable");
         } catch {}
       };
@@ -2098,7 +2098,7 @@ export function listSubbots() {
 
     out.push({
       number: num,
-      name: liveName || cfg.name || "Suki Subbot",
+      name: liveName || cfg.name || "Black Clover Subbot",
       prefixes: livePrefixes || cfg.prefixes || [...DEFAULT_SUB_PREFIXES],
       platform: entry.sock?.authState?.creds?.platform || cfg.platform || "",
       status: entry.status,
@@ -2179,7 +2179,7 @@ export async function initSubbots() {
 // ------------------------------------------------------------
 // Lógica compartida del comando "code" (bot principal y subbots)
 // ------------------------------------------------------------
-export async function handleCodeCommand(msg, { conn, args, botName = "La Suki Bot" }) {
+export async function handleCodeCommand(msg, { conn, args, botName = "Black Clover Bot" }) {
   const chatId = msg.key.remoteJid;
   const pref =
     (conn?.subPrefixes && conn.subPrefixes[0]) ||
@@ -2210,18 +2210,24 @@ export async function handleCodeCommand(msg, { conn, args, botName = "La Suki Bo
       chatId,
       {
         text: `
-╭━━━━━━━━━━━━━━━━━━╮
-   ❦ 𝑺𝑼𝑲𝑰 𝑺𝑼𝑩𝑩𝑶𝑻𝑺 ❦
-╰━━━━━━━━━━━━━━━━━━╯
+┏━━━━━━━━━━━━━━━━━━┓
+  ☘️ 𝑩𝑳𝑨𝑪𝑲 𝑪𝑳𝑶𝑽𝑬𝑹 𝑩𝑶𝑻 ☘️
+┗━━━━━━━━━━━━━━━━━━┛
 
-✳️ *Conéctate como subbot:*
+☘️ *ÚNETE A LOS CABALLEROS MÁGICOS*
+_Conviértete en subbot del escuadrón_
 
-📌 Escribe el comando con tu número y su código de país:
-   *${pref}code +507 6500-7845*
+┏━☘ *CÓMO ENTRAR*
+┃ ✧ Escribe el comando con tu número
+┃    y su código de país:
+┃ ✧ *${pref}code +507 6500-7845*
+┗━━━━━━━━━━━☘
 
-
-📲 El bot te enviará un *código de 8 dígitos* para
+📲 Recibirás un *grimorio de 8 dígitos* para
 vincular desde WhatsApp → *Dispositivos vinculados*.
+
+━━━━━━━━━━━━━━━━━━
+  ☘️ *Black Clover Bot*
 `.trim()
       },
       { quoted: msg }
@@ -2258,28 +2264,32 @@ vincular desde WhatsApp → *Dispositivos vinculados*.
       requestPairing: true,
       onPairingCode: async (code) => {
         const texto = `
-╭━━━━━━━━━━━━━━━━━━╮
-   ❦ 𝑺𝑼𝑲𝑰 𝑺𝑼𝑩𝑩𝑶𝑻𝑺 ❦
-╰━━━━━━━━━━━━━━━━━━╯
+┏━━━━━━━━━━━━━━━━━━┓
+  ☘️ 𝑩𝑳𝑨𝑪𝑲 𝑪𝑳𝑶𝑽𝑬𝑹 𝑩𝑶𝑻 ☘️
+┗━━━━━━━━━━━━━━━━━━┛
 
-🔑 *VINCULACIÓN DE TU SUBBOT (+${digits})*
+🔑 *TU GRIMORIO DE VINCULACIÓN (+${digits})*
 
-📲 *CÓMO VINCULAR:*
-1️⃣ Abre *WhatsApp* en tu teléfono.
-2️⃣ Ve a *Ajustes* → *Dispositivos vinculados*.
-3️⃣ Toca *Vincular un dispositivo*.
-4️⃣ Elige *Vincular con el número de teléfono*.
-5️⃣ Escribe el *código de 8 dígitos* que te envío abajo 👇
-   (mantén presionado el código para copiarlo).
+┏━☘ *EL RITUAL, PASO A PASO*
+┃ 1️⃣ Abre *WhatsApp* en tu teléfono.
+┃ 2️⃣ Ve a *Ajustes* → *Dispositivos vinculados*.
+┃ 3️⃣ Toca *Vincular un dispositivo*.
+┃ 4️⃣ Elige *Vincular con el número de teléfono*.
+┃ 5️⃣ Escribe el *código de 8 dígitos* de abajo 👇
+┃    (mantén presionado el código para copiarlo).
+┗━━━━━━━━━━━☘
 
-⏳ Tienes *5 minutos* para completar la vinculación.
-🎥 Mira el video si tienes dudas.`.trim();
+⏳ Tienes *5 minutos* antes de que el hechizo expire.
+🎥 Mira el video si tienes dudas.
+
+━━━━━━━━━━━━━━━━━━
+  ☘️ *Black Clover Bot*`.trim();
 
         // 🎬 Mensaje 1: video + explicación (SIN botón)
         try {
           await conn.sendMessage(
             chatId,
-            { video: { url: CODE_VIDEO }, caption: texto, footer: "❦ Suki Subbots ❦" },
+            { video: { url: CODE_VIDEO }, caption: texto, footer: "☘️ Black Clover Bot ☘️" },
             { quoted: msg }
           );
         } catch (e) {
@@ -2296,11 +2306,11 @@ vincular desde WhatsApp → *Dispositivos vinculados*.
             chatId,
             {
               text: `
-╭━━━━━━━━━━━━━━━━━━╮
-   ❦ 𝑺𝑼𝑲𝑰 𝑺𝑼𝑩𝑩𝑶𝑻𝑺 ❦
-╰━━━━━━━━━━━━━━━━━━╯
+┏━━━━━━━━━━━━━━━━━━┓
+  ☘️ 𝑩𝑳𝑨𝑪𝑲 𝑪𝑳𝑶𝑽𝑬𝑹 𝑩𝑶𝑻 ☘️
+┗━━━━━━━━━━━━━━━━━━┛
 
-🎉 *¡Bienvenido al sistema de Subbots!*
+🎉 *¡Ya eres parte del escuadrón!* ☘️
 ✅ El número *+${digits}* se conectó exitosamente.
 
 📩 Ve a tu propio número aquí:
@@ -2311,11 +2321,12 @@ usar *addgrupo*, *addlista*, *setprefix* y todo tu subbot 🤖
 
 🎨 *¡Tu subbot es tuyo, ponle tu estilo!*
 Escríbele *setmenu* a tu propio número para elegir uno de
-los *7 diseños*, poner tu *imagen o video* en los menús,
-tu *nombre* (quita la marca Suki de menús y descargas) y
+los *12 diseños*, poner tu *imagen o video* en los menús,
+tu *nombre* (quita la marca Black Clover de menús y descargas) y
 tu *foto de perfil*. Con *delmenu* lo dejas de fábrica.
 
-🤖 ${botName}`.trim(),
+━━━━━━━━━━━━━━━━━━
+  ☘️ *${botName}*`.trim(),
               mentions: [`${digits}@s.whatsapp.net`]
             },
             { quoted: msg }

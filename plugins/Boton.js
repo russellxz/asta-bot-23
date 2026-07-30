@@ -7,7 +7,7 @@ const handler = async (msg, { conn }) => {
       chatId,
       {
         text: "🔢 *Botón de prueba*\n\nToca el botón de abajo para copiar el código 👇",
-        footer: "❦ La Suki Bot ❦",
+        footer: "☘️ Black Clover Bot ☘️",
         nativeFlow: [
           {
             text: "📋 Copiar código",

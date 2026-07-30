@@ -91,7 +91,7 @@ const handler = async (msg, { conn, args }) => {
     clan.miembros.push({ numero: objetivoNum, rol: "lider", desde: ahora });
   }
 
-  // Actualizar encabezado de líder del clan (reemplaza a "La Suki Bot")
+  // Actualizar encabezado de líder del clan (reemplaza a "Black Clover Bot")
   clan.lider = {
     numero: usuario.numero,
     nombre: usuario.nombre || "",

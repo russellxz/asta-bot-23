@@ -20,7 +20,7 @@ const handler = async (msg, { conn }) => {
   ].sort((a, b) => a.localeCompare(b));
 
   return enviarMenu(conn, chatId, msg, "allmenu", {
-    titulo: "TODOS LOS COMANDOS",
+    titulo: "GRIMORIO COMPLETO",
     info: [
       ["Comandos activos", comandos.length],
       ["Prefijo actual", p]
@@ -31,7 +31,7 @@ const handler = async (msg, { conn }) => {
         items: comandos.map((c) => `${p}${c}`)
       }
     ],
-    nota: "Bot creado desde cero 🧠"
+    nota: "Todo el grimorio abierto ante ti ☘️"
   });
 };
 
