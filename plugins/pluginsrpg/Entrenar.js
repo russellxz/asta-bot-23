@@ -36,8 +36,8 @@ const handler = async (msg, { conn }) => {
 
   await conn.sendMessage(chatId, { react: { text: "🏋️", key: msg.key } });
 
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  let db = fs.existsSync(sukirpgPath) ? JSON.parse(fs.readFileSync(sukirpgPath)) : {};
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  let db = fs.existsSync(blackcloverrpgPath) ? JSON.parse(fs.readFileSync(blackcloverrpgPath)) : {};
   db.usuarios = Array.isArray(db.usuarios) ? db.usuarios : [];
 
   const usuario = db.usuarios.find(u => u.numero === numero);
@@ -119,7 +119,7 @@ const handler = async (msg, { conn }) => {
   usuario.entrenarDiario.creditos += creditosGanados;
   usuario.entrenarDiario.xp += xpGanada;
 
-  fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
   const nombreTexto = `${usuario.nombre} ${usuario.apellido}`.trim();
   const mascotaNombre = mascota.nombre || "tu mascota";

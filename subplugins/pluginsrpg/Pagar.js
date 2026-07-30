@@ -11,8 +11,8 @@ const handler = async (msg, { conn, args }) => {
   await conn.sendMessage(chatId, { react: { text: "💳", key: msg.key } });
 
   // Cargar DB
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  let db = fs.existsSync(sukirpgPath) ? JSON.parse(fs.readFileSync(sukirpgPath)) : {};
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  let db = fs.existsSync(blackcloverrpgPath) ? JSON.parse(fs.readFileSync(blackcloverrpgPath)) : {};
   db.usuarios = db.usuarios || [];
   db.banco = db.banco || null;
 
@@ -100,7 +100,7 @@ const handler = async (msg, { conn, args }) => {
     liquidado = true;
   }
 
-  fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
   // === FACTURA DE PAGO (mismo diseño que préstamo) ===
   try {

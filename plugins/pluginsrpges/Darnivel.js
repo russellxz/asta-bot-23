@@ -74,7 +74,7 @@ const handler = async (msg, { conn, args }) => {
   }
 
   // Cargar DB y buscar usuario
-  const file = path.join(process.cwd(), "sukirpg.json");
+  const file = path.join(process.cwd(), "blackcloverrpg.json");
   const db = loadDB(file);
   db.usuarios = Array.isArray(db.usuarios) ? db.usuarios : [];
 

@@ -61,11 +61,11 @@ const handler = async (msg, { conn, args }) => {
   }
 
   // 📂 Cargar DB
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  if (!fs.existsSync(sukirpgPath)) {
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  if (!fs.existsSync(blackcloverrpgPath)) {
     return conn.sendMessage(chatId, { text: "❌ No existe la base de datos del RPG.", quoted: msg });
   }
-  const db = JSON.parse(fs.readFileSync(sukirpgPath, "utf-8")) || {};
+  const db = JSON.parse(fs.readFileSync(blackcloverrpgPath, "utf-8")) || {};
   db.banco = db.banco || null;
   db.usuarios = Array.isArray(db.usuarios) ? db.usuarios : [];
 
@@ -100,7 +100,7 @@ const handler = async (msg, { conn, args }) => {
     descripcion: `Plazo reiniciado a ${tiempo.texto} por owner`
   });
 
-  fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
   // 📨 Confirmación
   await conn.sendMessage(chatId, {

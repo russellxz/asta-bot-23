@@ -26,8 +26,8 @@ const handler = async (msg, { conn, args }) => {
 
   await conn.sendMessage(chatId, { react: { text: "💸", key: msg.key } });
 
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  const db = fs.existsSync(sukirpgPath) ? JSON.parse(fs.readFileSync(sukirpgPath)) : {};
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  const db = fs.existsSync(blackcloverrpgPath) ? JSON.parse(fs.readFileSync(blackcloverrpgPath)) : {};
   db.usuarios = Array.isArray(db.usuarios) ? db.usuarios : [];
   db.banco = db.banco || null;
 
@@ -110,7 +110,7 @@ const handler = async (msg, { conn, args }) => {
   remitente.creditos = saldoDisponible - cantidad;
   receptor.creditos = (receptor.creditos || 0) + cantidad;
 
-  fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
   // === Factura visual ===
   const fecha = new Date().toLocaleDateString("es-AR", {

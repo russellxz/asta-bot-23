@@ -88,7 +88,7 @@ async function procesarRecompensas(conn) {
   if (running) return;
   running = true;
 
-  const file = path.join(process.cwd(), "sukirpg.json");
+  const file = path.join(process.cwd(), "blackcloverrpg.json");
   if (!fs.existsSync(file)) { running = false; return; }
 
   let db;

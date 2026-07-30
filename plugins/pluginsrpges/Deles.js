@@ -24,8 +24,8 @@ const handler = async (msg, { conn, args }) => {
   }
 
   const index = parseInt(args[0]) - 1;
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  const db = cargarDB(sukirpgPath);
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  const db = cargarDB(blackcloverrpgPath);
 
   db.usuarios = Array.isArray(db.usuarios) ? db.usuarios : [];
   db.esclavos = Array.isArray(db.esclavos) ? db.esclavos : [];
@@ -72,7 +72,7 @@ const handler = async (msg, { conn, args }) => {
     delete slaveUser.esclavitud;
   }
 
-  guardarDB(sukirpgPath, db);
+  guardarDB(blackcloverrpgPath, db);
 
   await conn.sendMessage(chatId, {
     text: `🗑️ Se eliminó el contrato con @${slaveNum}.\nYa no es tu esclavo.`,

@@ -12,8 +12,8 @@ const handler = async (msg, { conn, args }) => {
 
   await conn.sendMessage(chatId, { react: { text: "🏦", key: msg.key } });
 
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  let db = fs.existsSync(sukirpgPath) ? JSON.parse(fs.readFileSync(sukirpgPath)) : {};
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  let db = fs.existsSync(blackcloverrpgPath) ? JSON.parse(fs.readFileSync(blackcloverrpgPath)) : {};
   db.usuarios = Array.isArray(db.usuarios) ? db.usuarios : [];
   db.banco = db.banco || null;
 
@@ -118,7 +118,7 @@ ${restante > 0 ? `👉 Aún puedes solicitar hasta *${restante}* créditos.` : "
       extraAPagar: extraConInteres
     });
 
-    fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+    fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
     // Comprobante visual de AMPLIACIÓN (Canvas)
     try {
@@ -210,7 +210,7 @@ ${restante > 0 ? `👉 Aún puedes solicitar hasta *${restante}* créditos.` : "
       }
     };
     db.banco.prestamos.push(prestamo);
-    fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+    fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
     try {
       const canvas = createCanvas(800, 500);

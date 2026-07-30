@@ -11,11 +11,11 @@ const handler = async (msg, { conn }) => {
     react: { text: "💰", key: msg.key }
   });
 
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
 
   let db = {};
-  if (fs.existsSync(sukirpgPath)) {
-    db = JSON.parse(fs.readFileSync(sukirpgPath));
+  if (fs.existsSync(blackcloverrpgPath)) {
+    db = JSON.parse(fs.readFileSync(blackcloverrpgPath));
   }
 
   const usuarios = db.usuarios || [];

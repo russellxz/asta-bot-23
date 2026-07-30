@@ -17,7 +17,7 @@ const WIN_XP_MIN   = 700, WIN_XP_MAX   = 1000;
 const LOSE_CRED_MIN = 250, LOSE_CRED_MAX = 400;
 const LOSE_XP_MIN   = 300, LOSE_XP_MAX   = 500;
 
-const FILE = path.join(process.cwd(), "sukirpg.json");
+const FILE = path.join(process.cwd(), "blackcloverrpg.json");
 const load = () => fs.existsSync(FILE) ? JSON.parse(fs.readFileSync(FILE, "utf-8")) : { usuarios: [] };
 const save = (db) => fs.writeFileSync(FILE, JSON.stringify(db, null, 2));
 

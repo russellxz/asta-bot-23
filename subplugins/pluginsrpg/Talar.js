@@ -36,7 +36,7 @@ const handler = async (msg, { conn }) => {
 
   await conn.sendMessage(chatId, { react: { text: "🪵", key: msg.key } });
 
-  const dbPath = path.join(process.cwd(), "sukirpg.json");
+  const dbPath = path.join(process.cwd(), "blackcloverrpg.json");
   let db = fs.existsSync(dbPath) ? JSON.parse(fs.readFileSync(dbPath, "utf-8")) : {};
   db.usuarios = db.usuarios || [];
 

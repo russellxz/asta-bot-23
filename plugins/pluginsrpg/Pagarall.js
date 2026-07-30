@@ -11,8 +11,8 @@ const handler = async (msg, { conn }) => {
   await conn.sendMessage(chatId, { react: { text: "💳", key: msg.key } });
 
   // Cargar DB
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  let db = fs.existsSync(sukirpgPath) ? JSON.parse(fs.readFileSync(sukirpgPath)) : {};
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  let db = fs.existsSync(blackcloverrpgPath) ? JSON.parse(fs.readFileSync(blackcloverrpgPath)) : {};
   db.usuarios = Array.isArray(db.usuarios) ? db.usuarios : [];
   db.banco = db.banco || null;
 
@@ -53,7 +53,7 @@ const handler = async (msg, { conn }) => {
   if (pendiente <= 0) {
     // Nada que pagar; limpiamos por si quedó marcado activo con 0
     db.banco.prestamos.splice(prestamoIndex, 1);
-    fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+    fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
     return conn.sendMessage(chatId, {
       text: "✅ Tu préstamo ya estaba liquidado. Se removió del sistema.",
       quoted: msg
@@ -103,7 +103,7 @@ const handler = async (msg, { conn }) => {
     db.banco.prestamos.splice(prestamoIndex, 1);
   }
 
-  fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
   // === FACTURA DE PAGO TOTAL ===
   try {

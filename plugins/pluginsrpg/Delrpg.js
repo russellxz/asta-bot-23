@@ -8,14 +8,14 @@ const handler = async (msg, { conn }) => {
   const sender = msg.key.participant || msg.key.remoteJid;
   const numero = sender.replace(/[^0-9]/g, "");
 
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  if (!fs.existsSync(sukirpgPath)) {
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  if (!fs.existsSync(blackcloverrpgPath)) {
     return conn.sendMessage(chatId, {
       text: "❌ La base de datos RPG aún no existe.",
     }, { quoted: msg });
   }
 
-  let db = JSON.parse(fs.readFileSync(sukirpgPath));
+  let db = JSON.parse(fs.readFileSync(blackcloverrpgPath));
   db.usuarios = db.usuarios || [];
   db.personajes = db.personajes || [];
   db.banco = db.banco || null;
@@ -87,8 +87,8 @@ const handler = async (msg, { conn }) => {
         }
 
         // Releer DB
-        const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-        let db = JSON.parse(fs.readFileSync(sukirpgPath));
+        const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+        let db = JSON.parse(fs.readFileSync(blackcloverrpgPath));
         db.usuarios = db.usuarios || [];
         db.personajes = db.personajes || [];
         db.banco = db.banco || null;
@@ -139,7 +139,7 @@ const handler = async (msg, { conn }) => {
         clearTimeout(job.timer);
         delete pendingDelete[citado];
 
-        fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+        fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
         await conn.sendMessage(job.chatId, {
           text: `✅ Tu cuenta RPG ha sido eliminada con éxito.\n\n🛒 Tus personajes fueron devueltos a la tienda.`,

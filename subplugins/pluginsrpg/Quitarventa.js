@@ -16,8 +16,8 @@ const handler = async (msg, { conn, args }) => {
     });
   }
 
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  let db = fs.existsSync(sukirpgPath) ? JSON.parse(fs.readFileSync(sukirpgPath)) : {};
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  let db = fs.existsSync(blackcloverrpgPath) ? JSON.parse(fs.readFileSync(blackcloverrpgPath)) : {};
   db.usuarios = db.usuarios || [];
   db.personajes_venta = db.personajes_venta || [];
 
@@ -69,7 +69,7 @@ const handler = async (msg, { conn, args }) => {
     !(p.nombre === personaje.nombre && p.vendedor.numero === numero)
   );
 
-  fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
   await conn.sendMessage(chatId, {
     image: { url: personaje.imagen },

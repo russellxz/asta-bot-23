@@ -36,8 +36,8 @@ const handler = async (msg, { conn }) => {
 
   await conn.sendMessage(chatId, { react: { text: "📜", key: msg.key } });
 
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  const db = cargarDB(sukirpgPath);
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  const db = cargarDB(blackcloverrpgPath);
 
   db.usuarios = Array.isArray(db.usuarios) ? db.usuarios : [];
   db.esclavos = Array.isArray(db.esclavos) ? db.esclavos : [];

@@ -81,7 +81,7 @@ const handler = async (msg, { conn, args }) => {
   if (!objetivoNum) return conn.sendMessage(chatId, { text: "❌ Debes responder o mencionar al usuario que quieres comprar.", quoted: msg });
   if (objetivoNum === compradorNum) return conn.sendMessage(chatId, { text: "❌ No puedes comprarte a ti mismo.", quoted: msg });
 
-  const file = path.join(process.cwd(), "sukirpg.json");
+  const file = path.join(process.cwd(), "blackcloverrpg.json");
   const db = cargarDB(file);
   db.usuarios = Array.isArray(db.usuarios)? db.usuarios: [];
   db.esclavos = Array.isArray(db.esclavos)? db.esclavos: [];

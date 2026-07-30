@@ -1,140 +1,277 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=210&color=0:0B0B0B,50:1B5E20,100:00E676&text=%E2%98%98%EF%B8%8F%20BLACK%20CLOVER%20BOT%20%E2%98%98%EF%B8%8F&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Magia%2C%20poder%20y%20control%20en%20tu%20WhatsApp&descSize=18&descAlignY=58" width="100%"/>
+<img src="https://cdn.russellxz.click/de88e079.jpg" alt="Black Clover Bot" width="820"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=26&duration=2800&pause=600&color=00E676&center=true&vCenter=true&width=620&lines=%E2%98%98%EF%B8%8F%20El%20grimorio%20de%20WhatsApp%20m%C3%A1s%20poderoso%20%E2%98%98%EF%B8%8F;%E2%9A%A1%20Sistema%20de%20Subbots%20ESTABLE%20%E2%9A%A1;%F0%9F%A4%96%20%2B500%20subbots%20conectados%20a%20la%20vez;%F0%9F%93%A5%20Descargas%2C%20juegos%2C%20IA%20y%20m%C3%A1s" alt="Typing SVG"/>
+# ☘️ BLACK CLOVER BOT ☘️
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=20&duration=3200&pause=800&color=FFD700&center=true&vCenter=true&width=620&lines=%F0%9F%9A%80%20Alojado%20en%20el%20MEJOR%20hosting%20del%20mundo;%E2%98%81%EF%B8%8F%20SKY%20ULTRA%20PLUS%20%E2%98%81%EF%B8%8F;%F0%9F%92%8E%20Velocidad%2C%20potencia%20y%20estabilidad%2024%2F7" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=Righteous&weight=400&size=30&duration=2600&pause=700&color=00E676&center=true&vCenter=true&width=700&height=60&lines=BLACK%20CLOVER%20BOT;El%20grimorio%20de%20WhatsApp;Magia%20%C2%B7%20Poder%20%C2%B7%20Control;%E2%98%98%EF%B8%8F%20Nunca%20te%20rindas%20%E2%98%98%EF%B8%8F" alt="Black Clover Bot"/>
 
 <br/>
 
-<img src="https://img.shields.io/badge/WhatsApp-Bot-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
-<img src="https://img.shields.io/badge/Node.js-20+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
-<img src="https://img.shields.io/badge/Baileys-Ultra-00E676?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Subbots-Estables%20⚡-1B5E20?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Hosting-Sky%20Ultra%20Plus%20🚀-FFD700?style=for-the-badge"/>
+![Node](https://img.shields.io/badge/node-%E2%89%A520-1B5E20?style=flat-square&labelColor=0B0B0B&logo=nodedotjs&logoColor=00E676)
+![Baileys](https://img.shields.io/badge/baileys-ultra-00E676?style=flat-square&labelColor=0B0B0B)
+![Comandos](https://img.shields.io/badge/comandos-329%20%2B%20266-FFD700?style=flat-square&labelColor=0B0B0B)
+![Diseños](https://img.shields.io/badge/dise%C3%B1os%20de%20men%C3%BA-12-00E676?style=flat-square&labelColor=0B0B0B)
+![Subbots](https://img.shields.io/badge/subbots-%2B500%20estables-1B5E20?style=flat-square&labelColor=0B0B0B)
+![Licencia](https://img.shields.io/badge/licencia-ISC-777?style=flat-square&labelColor=0B0B0B)
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
+<br/>
 
-</div>
-
-## 🎬 Presentación
-
-<p align="center">
-  <img src="https://cdn.russellxz.click/de88e079.jpg" alt="Portada de Black Clover Bot" width="600"/>
-</p>
-
-<p align="center">
-  <a href="https://cdn.russellxz.click/bc06f25b.mp4">
-    <img src="https://img.shields.io/badge/🎬 Ver%20video%20de%20presentación-00E676?style=for-the-badge" alt="Ver video de presentación">
-  </a>
-</p>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
-
-## 📦 Instalación y configuración
-
-> 🛠️ Mira el video completo donde aprenderás cómo instalar Black Clover Bot desde cero:
-
-<p align="center">
-
-[![Ver en YouTube](https://img.shields.io/badge/Ver%20en%20YouTube-%F0%9F%93%BA-red?style=for-the-badge&logo=youtube)](https://youtu.be/xH_gQrqw4HI?si=9G61A3SmKmOY0mtz)
-
-</p>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
-
-## ⚙️ Características
-
-<div align="center">
-
-| 🚀 Función | 💬 Descripción |
-|:---|:---|
-| 📥 **Descargas** | Videos y música de YouTube, TikTok, Instagram, Facebook, Twitter, Spotify y más |
-| 🎮 **Juegos** | Verdad, reto, y entretenimiento para tus grupos |
-| 🧠 **IA integrada** | ChatGPT incluido para conversaciones avanzadas |
-| 💬 **Respuestas** | Inteligentes, naturales y con estilo |
-| 🚪 **Grupos automáticos** | Sistema para abrir y cerrar grupos por horario |
-| 👮 **Administración** | Comandos exclusivos para administradores: antilink, antidelete, mute, modoadmins y más |
-| 📊 **Actividad** | Ranking de mensajes, detección de fantasmas y limpieza automática |
-| 🍎 **Compatible con iPhone** | Detecta el dispositivo y adapta botones o reacciones automáticamente |
-| 🌐 **Panel Web** | Control total desde la página web oficial de Black Clover Bot |
-| ☘️ **12 diseños de menú** | Grimorio, Trébol Negro, Espada de Asta, Toro Negro, Rey Mago y más, con `setmenu` |
-| 🖥️ **VPS / Pterodactyl** | Corre estable en cualquier servidor |
+**`☘️`** ·  **`☘️`** ·  **`☘️`** ·  **`☘️`** ·  **`☘️`** ·  **`☘️`** ·  **`☘️`** ·  **`☘️`** ·  **`☘️`**
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
+<br/>
 
-## 🤖 Sistema de Subbots — ⚡ ESTABLE ⚡
+> ### ☘️ *"Mi magia es nunca rendirme."*
+>
+> Un bot de WhatsApp construido desde cero sobre **Baileys**: descargas, IA, RPG, ventas,
+> moderación y un sistema de **subbots** que aguanta más de 500 conexiones a la vez.
+> Cada menú se puede vestir con **12 diseños distintos** y con tu propia imagen.
+
+<br/>
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=20&duration=3000&pause=700&color=48D597&center=true&vCenter=true&width=600&lines=%E2%9C%A8%20%C3%9Anete%20al%20escuadr%C3%B3n%20Black%20Clover%20%E2%9C%A8;%F0%9F%93%B2%20Vinculaci%C3%B3n%20con%20c%C3%B3digo%20de%208%20d%C3%ADgitos;%F0%9F%8C%90%20Con%C3%A9ctate%20desde%20la%20p%C3%A1gina%20web;%F0%9F%94%A5%20Soporta%20%2B500%20subbots%20estables" alt="Typing SVG"/>
+### 🎬 Mira el bot en acción
+
+[![Ver presentación](https://img.shields.io/badge/▶%20VER%20PRESENTACIÓN-00E676?style=for-the-badge&labelColor=0B0B0B)](https://cdn.russellxz.click/bc06f25b.mp4)
+[![Ver tutorial](https://img.shields.io/badge/▶%20TUTORIAL%20DE%20INSTALACIÓN-FF0000?style=for-the-badge&labelColor=0B0B0B&logo=youtube&logoColor=white)](https://youtu.be/xH_gQrqw4HI?si=9G61A3SmKmOY0mtz)
 
 </div>
 
-> 🦾 El sistema de subbots más completo y **estable**:
+<br/>
 
-- 🔑 **Conexión fácil** — comando `code` con código de 8 dígitos (también `serbot`, `jadibot`, `qr`)
-- 🌐 **Vinculación desde la web** — pon tu número en la página de Black Clover Bot y recibe el código ahí mismo
-- 🛡️ **Independientes** — cada subbot tiene sus propios comandos, prefijos, bienvenidas y configuración
-- ⚙️ **Prefijos personalizables** — `setprefix` para cambiarlo y `reprefix` para restaurar el de fábrica
-- 🎨 **Personalizables** — `setmenu` para elegir diseño, imagen y nombre propio de cada subbot
-- 📥 **Descargas propias** — cada subbot maneja sus peticiones por separado, sin interferencias
-- 👮 **Moderación completa** — antilink, antidelete, mute, modoadmins, welcome y más por cada subbot
-- 🔁 **Reconexión automática** — si el bot principal cae, tus subbots siguen funcionando
-- 💪 **Escala real** — probado con **más de 500 subbots** conectados a la vez
+## ⚡ Arranque rápido
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
+```bash
+git clone https://github.com/russellxz/asta-bot-23.git
+cd asta-bot-23
+npm install
+npm start
+```
 
-## ☁️ Hosting oficial — 🏆 EL MEJOR DEL MUNDO 🏆
+Al arrancar verás el banner **BLACK CLOVER** con luces RGB en la consola, y te pedirá tu
+número para darte un **código de 8 dígitos**. Lo escribes en
+*WhatsApp → Ajustes → Dispositivos vinculados* y listo. ☘️
+
+```
+┏━━━━━━━━━━━━━━━━━━┓
+  ☘️ CÓMO VINCULAR ☘️
+┗━━━━━━━━━━━━━━━━━━┛
+ 1 · Escribe tu número con código de país
+ 2 · Ajustes → Dispositivos vinculados
+ 3 · Vincular con número de teléfono
+ 4 · Escribe el código de 8 dígitos
+```
+
+<br/>
+
+## 📖 El grimorio · qué trae dentro
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### 📥 Descargas
+YouTube, TikTok, Instagram,
+Facebook, Twitter, Spotify,
+Pinterest, MediaFire, APKs
+y letras de canciones.
+
+</td>
+<td width="33%" valign="top">
+
+### 🧠 Inteligencia
+ChatGPT, Gemini, DALL·E,
+PixAI, visión por imagen,
+voz IA, texto a audio
+y generación de video.
+
+</td>
+<td width="33%" valign="top">
+
+### ⚔️ RPG completo
+Niveles, banco, préstamos,
+mascotas, personajes,
+clanes, batallas, tiendas
+y tops del reino.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+### 🛡️ Moderación
+Antilink, antidelete,
+antiporno, mute, kick,
+modoadmins, fantasmas
+y apertura por horario.
+
+</td>
+<td valign="top">
+
+### 💳 Ventas
+Stock, combos, Netflix,
+películas, trámites,
+facturas, sorteos,
+promos y soporte.
+
+</td>
+<td valign="top">
+
+### 🎨 Stickers y media
+`s`, `sks` con 50 efectos,
+`qc`, `toimg`, `tovideo`,
+`toanime`, `hd`, `tourl`
+y paquetes guardados.
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<details>
+<summary><b>☘️ Ver los menús disponibles</b></summary>
+
+<br/>
+
+| Comando | Qué abre |
+|:--|:--|
+| `.menu` | Grimorio principal — todo lo esencial |
+| `.allmenu` | Grimorio completo — absolutamente todos los comandos |
+| `.menugrupo` | Sala del escuadrón — administración de grupos |
+| `.menuaudio` | Hechizos de sonido — paquetes de multimedia |
+| `.menurpg` | Reino del Trébol — el mundo RPG |
+| `.menufree` | Arena de batalla — sistema de clanes Free Fire |
+| `.menuowner` | Trono del Rey Mago — comandos de dueño |
+
+</details>
+
+<details>
+<summary><b>🎨 Ver los 12 diseños de menú</b></summary>
+
+<br/>
+
+Cámbialos en caliente con **`.setmenu`** — sirven para todos los menús y también
+para los comandos de descarga.
+
+| # | Diseño | Estilo |
+|:--:|:--|:--|
+| 1 | ☘️ Grimorio | Páginas de grimorio con tréboles |
+| 2 | ♣️ Trébol Negro | Hojas negras y barras marcadas |
+| 3 | ⚔️ Espada de Asta | Filos limpios, corte de antimagia |
+| 4 | 🐂 Toro Negro | Ruidoso y salvaje |
+| 5 | 🗡️ Antimagia | Trazos rotos, terminal oscuro |
+| 6 | 👑 Rey Mago | Doble borde real |
+| 7 | ✧ Maná Puro | Sin adornos, limpio y directo |
+| 8 | 🌟 Amanecer Dorado | Elegancia dorada, letra ancha |
+| 9 | 🌀 Zona de Maná | Sellos mágicos, monoespaciada |
+| 10 | 🌪️ Espíritu del Viento | Ráfagas y destellos, letra doble |
+| 11 | 😈 Demonio de Asta | Llamas y letra gótica |
+| 12 | 🏰 Reino del Trébol | Estandartes del reino |
+
+Además puedes poner **tu propia imagen o video** en cada menú, **tu nombre de bot**
+y **tu foto de perfil**. Con `.delmenu` vuelve todo de fábrica.
+
+</details>
+
+<details>
+<summary><b>⚙️ Ver requisitos y estructura</b></summary>
+
+<br/>
+
+**Requisitos:** Node.js 20 o superior · ffmpeg · una VPS, Pterodactyl o panel compatible.
+
+```
+asta-bot-23/
+├── index.js              → arranque, conexión y despacho de comandos
+├── subbots.js            → núcleo del sistema de subbots
+├── webserver.js          → API y panel web
+├── disenos.js            → motor de menús y personalización
+├── diseno.json           → los 12 diseños
+├── setmenu-core.js       → panel de setmenu
+├── blackcloverrpg.json   → base de datos del RPG
+├── plugins/              → 329 comandos del bot principal
+├── subplugins/           → 266 comandos de los subbots
+└── libs/                 → utilidades compartidas
+```
+
+</details>
+
+<br/>
+
+## 🤖 Sistema de subbots
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=24&duration=2600&pause=600&color=FFD700&center=true&vCenter=true&width=620&lines=%E2%98%81%EF%B8%8F%20SKY%20ULTRA%20PLUS%20%E2%98%81%EF%B8%8F;%F0%9F%8F%86%20El%20mejor%20hosting%20del%20mundo%20%F0%9F%8F%86;%F0%9F%9A%80%20Potencia%20%C2%B7%20Velocidad%20%C2%B7%20Estabilidad" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.demolab.com?font=Righteous&weight=400&size=22&duration=2800&pause=700&color=FFD700&center=true&vCenter=true&width=640&height=45&lines=Convi%C3%A9rtete%20en%20Caballero%20M%C3%A1gico;Tu%20propio%20subbot%20en%201%20comando;%2B500%20subbots%20a%20la%20vez;Cada%20uno%20con%20su%20propio%20grimorio" alt="Subbots"/>
 
-<img src="https://cdn.russellxz.click/a80956b1.jpg" alt="Sky Ultra Plus" width="400"/>
+</div>
+
+```
+.code +507 6500-7845
+```
+
+Un comando y ya eres parte del escuadrón. También responde a `serbot`, `jadibot`, `sercode` y `qr`.
+
+| ☘️ | Lo que te llevas |
+|:--:|:--|
+| 🔑 | Vinculación con código de 8 dígitos, o desde la página web |
+| 🛡️ | Tu subbot es **tuyo**: comandos, prefijos, bienvenidas y config propias |
+| 🎨 | `setmenu` propio — diseño, imagen, nombre y foto de perfil |
+| 👥 | `addgrupo` y `addlista` para decidir a quién responde |
+| ⚙️ | `setprefix` para cambiar el prefijo, `reprefix` para restaurarlo |
+| 📥 | Descargas independientes, sin pelearse con el bot principal |
+| 🔁 | Si el bot principal cae, tu subbot sigue vivo |
+
+<br/>
+
+## ☁️ Hosting oficial
+
+<div align="center">
+
+<img src="https://cdn.russellxz.click/a80956b1.jpg" alt="Sky Ultra Plus" width="420"/>
 
 <br/><br/>
 
-> 🛰️ *Black Clover Bot está alojado con orgullo en el mejor hosting del mundo:*
+**Black Clover Bot corre con orgullo sobre el mejor hosting del mundo**
 
-<a href="https://dash.skyultraplus.com">
-  <img src="https://img.shields.io/badge/☁️%20SKY%20ULTRA%20PLUS%20—%20dash.skyultraplus.com-00E676?style=for-the-badge" alt="Sky Ultra Plus"/>
-</a>
+[![Sky Ultra Plus](https://img.shields.io/badge/☁️%20SKY%20ULTRA%20PLUS-00D4FF?style=for-the-badge&labelColor=0B0B0B)](https://dash.skyultraplus.com)
+
+`Potencia` · `Velocidad` · `Estabilidad 24/7`
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
+<br/>
 
-## 👑 Colaboradores
+## 👑 Créditos
 
-> 🤝 Gracias a quienes han apoyado el proyecto:
+Creado y mantenido por **Russell XZ**.
 
-- 🔹 [Zastinian](https://github.com/Zastinian)
-- 🔹 [DIEGO-OFC](https://github.com/DIEGO-OFC2)
-- 🔹 [ds6](https://github.com/ds6)
+Gracias a quienes han apoyado el proyecto:
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
+[![Zastinian](https://img.shields.io/badge/Zastinian-0B0B0B?style=flat-square&logo=github&logoColor=00E676)](https://github.com/Zastinian)
+[![DIEGO-OFC](https://img.shields.io/badge/DIEGO--OFC-0B0B0B?style=flat-square&logo=github&logoColor=00E676)](https://github.com/DIEGO-OFC2)
+[![ds6](https://img.shields.io/badge/ds6-0B0B0B?style=flat-square&logo=github&logoColor=00E676)](https://github.com/ds6)
+
+<br/>
 
 ## 💬 Comunidades
 
-Únete a nuestras comunidades para recibir soporte, novedades y actualizaciones:
+[![Comunidad Black Clover](https://img.shields.io/badge/☘️%20COMUNIDAD%20BLACK%20CLOVER-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=0B0B0B)](https://chat.whatsapp.com/EB4vMpRUw8R6me7myYF53M)
+[![Comunidad Sky Ultra Plus](https://img.shields.io/badge/☁️%20COMUNIDAD%20SKY%20ULTRA%20PLUS-00D4FF?style=for-the-badge&logo=whatsapp&logoColor=white&labelColor=0B0B0B)](https://chat.whatsapp.com/E6iWpvGuJ8zJNPbN3zOr0D)
 
-<p align="center">
-  <a href="https://chat.whatsapp.com/EB4vMpRUw8R6me7myYF53M">
-    <img src="https://img.shields.io/badge/☘️%20Comunidad%20Black%20Clover-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
-  </a>
-  <a href="https://chat.whatsapp.com/E6iWpvGuJ8zJNPbN3zOr0D">
-    <img src="https://img.shields.io/badge/☁️%20Comunidad%20Sky%20Ultra%20Plus-00D4FF?style=for-the-badge&logo=whatsapp&logoColor=white"/>
-  </a>
-</p>
+<br/>
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=22&duration=3000&pause=800&color=00E676&center=true&vCenter=true&width=640&lines=%E2%98%98%EF%B8%8F%20BLACK%20CLOVER%20BOT%20%E2%98%98%EF%B8%8F;Magia%2C%20poder%20y%20control;en%20tu%20grupo%20de%20WhatsApp%20%E2%98%98%EF%B8%8F" alt="Typing SVG"/>
+**`☘️`** ·  **`☘️`** ·  **`☘️`** ·  **`☘️`** ·  **`☘️`** ·  **`☘️`** ·  **`☘️`** ·  **`☘️`** ·  **`☘️`**
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:00E676,50:1B5E20,100:0B0B0B&section=footer" width="100%"/>
+### ☘️ BLACK CLOVER BOT ☘️
+*Magia, poder y control en tu WhatsApp*
+
+<sub>Si te sirvió, deja tu ⭐ en el repositorio.</sub>
 
 </div>

@@ -23,7 +23,7 @@ const handler = async (msg, { conn }) => {
   // reacción inicial
   await conn.sendMessage(chatId, { react: { text: "✨", key: msg.key } });
 
-  const file = path.join(process.cwd(), "sukirpg.json");
+  const file = path.join(process.cwd(), "blackcloverrpg.json");
   const db = loadDB(file);
   db.usuarios = Array.isArray(db.usuarios) ? db.usuarios : [];
   db.clanes = Array.isArray(db.clanes) ? db.clanes : [];

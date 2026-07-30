@@ -33,7 +33,7 @@ const handler = async (msg, { conn }) => {
 
   await conn.sendMessage(chatId, { react: { text: "⚔️", key: msg.key } });
 
-  const filePath = path.join(process.cwd(), "sukirpg.json");
+  const filePath = path.join(process.cwd(), "blackcloverrpg.json");
   let db = fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath)) : {};
   db.usuarios = Array.isArray(db.usuarios) ? db.usuarios : [];
 

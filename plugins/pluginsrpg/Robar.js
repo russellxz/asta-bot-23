@@ -76,7 +76,7 @@ const handler = async (msg, { conn }) => {
   }
 
   // Cargar DB
-  const filePath = path.join(process.cwd(), "sukirpg.json");
+  const filePath = path.join(process.cwd(), "blackcloverrpg.json");
   let db = fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, "utf-8")) : {};
   db.usuarios = Array.isArray(db.usuarios) ? db.usuarios : [];
 

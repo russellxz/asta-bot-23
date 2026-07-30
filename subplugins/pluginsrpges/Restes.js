@@ -29,11 +29,11 @@ const handler = async (msg, { conn }) => {
     return;
   }
 
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  if (!fs.existsSync(sukirpgPath)) {
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  if (!fs.existsSync(blackcloverrpgPath)) {
     await conn.sendMessage(
       chatId,
-      { text: "❌ No existe la base de datos (sukirpg.json)." },
+      { text: "❌ No existe la base de datos (blackcloverrpg.json)." },
       { quoted: msg }
     );
     return;
@@ -42,7 +42,7 @@ const handler = async (msg, { conn }) => {
   // Cargar DB
   let db;
   try {
-    db = JSON.parse(fs.readFileSync(sukirpgPath, "utf8")) || {};
+    db = JSON.parse(fs.readFileSync(blackcloverrpgPath, "utf8")) || {};
   } catch {
     await conn.sendMessage(
       chatId,
@@ -72,7 +72,7 @@ const handler = async (msg, { conn }) => {
 
   // Guardar
   try {
-    fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+    fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
   } catch {
     await conn.sendMessage(
       chatId,

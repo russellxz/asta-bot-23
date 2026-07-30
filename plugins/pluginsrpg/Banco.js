@@ -23,15 +23,15 @@ const handler = async (msg, { conn }) => {
 
   await conn.sendMessage(chatId, { react: { text: "🏦", key: msg.key } });
 
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  if (!fs.existsSync(sukirpgPath)) {
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  if (!fs.existsSync(blackcloverrpgPath)) {
     return conn.sendMessage(chatId, {
       text: "❌ Aún no existe la base de datos del RPG.",
       quoted: msg
     });
   }
 
-  const db = JSON.parse(fs.readFileSync(sukirpgPath, "utf-8")) || {};
+  const db = JSON.parse(fs.readFileSync(blackcloverrpgPath, "utf-8")) || {};
   db.banco = db.banco || null;
 
   if (!db.banco) {

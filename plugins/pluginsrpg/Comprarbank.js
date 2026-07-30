@@ -24,8 +24,8 @@ const handler = async (msg, { conn, args }) => {
   }
 
   // Cargar DB
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  let db = fs.existsSync(sukirpgPath) ? JSON.parse(fs.readFileSync(sukirpgPath, "utf-8")) : {};
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  let db = fs.existsSync(blackcloverrpgPath) ? JSON.parse(fs.readFileSync(blackcloverrpgPath, "utf-8")) : {};
   db.usuarios = Array.isArray(db.usuarios) ? db.usuarios : [];
   db.banco = db.banco || {};
   db.banco.tiendaPersonajesBanco = Array.isArray(db.banco.tiendaPersonajesBanco) ? db.banco.tiendaPersonajesBanco : [];
@@ -88,7 +88,7 @@ const handler = async (msg, { conn, args }) => {
     normaliza(x.nombre) !== normaliza(pj.nombre)
   );
 
-  fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
   // 📷 Avatar fallback
   let avatarURL = "https://cdn.russellxz.click/43f6a610.jpg";

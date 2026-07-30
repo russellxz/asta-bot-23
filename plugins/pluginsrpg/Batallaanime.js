@@ -5,7 +5,7 @@ import path from 'path';
 const COOLDOWN_MS = 7 * 60 * 1000; // 7 min
 const RETO_MS = 2 * 60 * 1000;     // 2 min
 
-const FILE = path.join(process.cwd(), "sukirpg.json");
+const FILE = path.join(process.cwd(), "blackcloverrpg.json");
 const load = () => fs.existsSync(FILE) ? JSON.parse(fs.readFileSync(FILE, "utf-8")) : { usuarios: [] };
 const save = (db) => fs.writeFileSync(FILE, JSON.stringify(db, null, 2));
 const jid = (msg) => msg.key.participant || msg.key.remoteJid;
