@@ -15,10 +15,10 @@ const handler = async (msg, { conn, command }) => {
   await conn.sendMessage(chatId, { react: { text: "💰", key: msg.key } });
 
   // Cargar DB
-  const dbPath = path.join(process.cwd(), "sukirpg.json");
+  const dbPath = path.join(process.cwd(), "blackcloverrpg.json");
   if (!fs.existsSync(dbPath)) {
     return conn.sendMessage(chatId, {
-      text: "❌ No existe la base de datos del RPG (sukirpg.json).",
+      text: "❌ No existe la base de datos del RPG (blackcloverrpg.json).",
       quoted: msg
     });
   }

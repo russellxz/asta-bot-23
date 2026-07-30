@@ -16,8 +16,8 @@ const handler = async (msg, { conn, args }) => {
 
   const [nombre, apellido, edad, fechaNacimiento] = args;
 
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  let db = fs.existsSync(sukirpgPath) ? JSON.parse(fs.readFileSync(sukirpgPath)) : {};
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  let db = fs.existsSync(blackcloverrpgPath) ? JSON.parse(fs.readFileSync(blackcloverrpgPath)) : {};
   if (!db.usuarios) db.usuarios = [];
   if (!db.mascotas) db.mascotas = [];
 
@@ -92,7 +92,7 @@ const handler = async (msg, { conn, args }) => {
   };
 
   db.usuarios.push(usuario);
-  fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
   const texto = `🎉 *¡Bienvenido al RPG de Black Clover Bot!*\n\n` +
                 `👤 *Nombre:* ${nombre} ${apellido}\n` +

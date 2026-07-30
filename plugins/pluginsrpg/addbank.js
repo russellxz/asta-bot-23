@@ -51,8 +51,8 @@ const handler = async (msg, { conn, args }) => {
   const tiempoMS = unidad === "m" ? valor * 60 * 1000 : valor * 60 * 60 * 1000;
 
   // 📂 Guardar configuración del banco
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  let db = fs.existsSync(sukirpgPath) ? JSON.parse(fs.readFileSync(sukirpgPath)) : {};
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  let db = fs.existsSync(blackcloverrpgPath) ? JSON.parse(fs.readFileSync(blackcloverrpgPath)) : {};
 
   // Preservar préstamos activos si ya existían
   const prestamosActivos = db?.banco?.prestamos || [];
@@ -77,7 +77,7 @@ const handler = async (msg, { conn, args }) => {
     prestamos: prestamosActivos
   };
 
-  fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
   // ✅ Confirmación
   await conn.sendMessage(chatId, {

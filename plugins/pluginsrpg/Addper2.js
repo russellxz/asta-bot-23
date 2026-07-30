@@ -48,8 +48,8 @@ const handler = async (msg, { conn, args, command }) => {
   }
 
   // Cargar DB
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  let data = fs.existsSync(sukirpgPath) ? JSON.parse(fs.readFileSync(sukirpgPath, "utf-8")) : {};
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  let data = fs.existsSync(blackcloverrpgPath) ? JSON.parse(fs.readFileSync(blackcloverrpgPath, "utf-8")) : {};
   if (!Array.isArray(data.personajes)) data.personajes = [];
 
   let agregados = 0, duplicados = 0, errores = 0;
@@ -88,7 +88,7 @@ const handler = async (msg, { conn, args, command }) => {
       };
 
       data.personajes.push(personaje);
-      fs.writeFileSync(sukirpgPath, JSON.stringify(data, null, 2));
+      fs.writeFileSync(blackcloverrpgPath, JSON.stringify(data, null, 2));
 
       const caption =
 `✅ *Personaje agregado a la tienda*

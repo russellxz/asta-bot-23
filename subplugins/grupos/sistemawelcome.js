@@ -12,6 +12,10 @@ const RECENT_EVENT_TTL_MS = 8000;
 // ==== HELPERS LID/REAL ====
 const DIGITS = (s = "") => String(s || "").replace(/[^0-9]/g, "");
 
+// ☘️ Portadas de bienvenida y despedida (Black Clover)
+const IMG_BIENVENIDA = "https://cdn.russellxz.click/092f23f6.jpg";
+const IMG_DESPEDIDA = "https://cdn.russellxz.click/33213955.jpg";
+
 function isActive(value) {
   const v = String(value ?? "").trim().toLowerCase();
   return (
@@ -447,7 +451,7 @@ async function handleGroupParticipantsUpdate(conn, update, recentEvents) {
           conn,
           resolved.realJid || mentionId,
           chatId,
-          "https://cdn.russellxz.click/e72cc417.jpeg"
+          IMG_BIENVENIDA
         );
 
         if (bienvenidaPersonalizada) {
@@ -462,8 +466,8 @@ async function handleGroupParticipantsUpdate(conn, update, recentEvents) {
             conn,
             chatId,
             perfilURL,
-            "https://cdn.russellxz.click/7177383b.jpg",
-            "https://cdn.russellxz.click/e72cc417.jpeg",
+            IMG_BIENVENIDA,
+            IMG_BIENVENIDA,
             `👋 ${mention}\n\n${mensaje}\n\n🤖 Black Clover Subbots`,
             [mentionId]
           );
@@ -475,7 +479,7 @@ async function handleGroupParticipantsUpdate(conn, update, recentEvents) {
           conn,
           resolved.realJid || mentionId,
           chatId,
-          "https://cdn.russellxz.click/7177383b.jpg"
+          IMG_DESPEDIDA
         );
 
         if (despedidaPersonalizada) {
@@ -490,8 +494,8 @@ async function handleGroupParticipantsUpdate(conn, update, recentEvents) {
             conn,
             chatId,
             perfilURL,
-            "https://cdn.russellxz.click/bc842c44.jpg",
-            "https://cdn.russellxz.click/7177383b.jpg",
+            IMG_DESPEDIDA,
+            IMG_DESPEDIDA,
             `👋 ${mention}\n\n${mensaje}\n\n🤖 Black Clover Subbots`,
             [mentionId]
           );

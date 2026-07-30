@@ -18,8 +18,8 @@ const handler = async (msg, { conn, args, participants }) => {
     });
   }
 
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  let db = fs.existsSync(sukirpgPath) ? JSON.parse(fs.readFileSync(sukirpgPath)) : {};
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  let db = fs.existsSync(blackcloverrpgPath) ? JSON.parse(fs.readFileSync(blackcloverrpgPath)) : {};
   if (!db.usuarios) db.usuarios = [];
 
   // Sacar el número del usuario objetivo
@@ -64,7 +64,7 @@ const handler = async (msg, { conn, args, participants }) => {
 
   // Sumarle créditos
   user.creditos += cantidad;
-  fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
   // Confirmación
   await conn.sendMessage(chatId, {

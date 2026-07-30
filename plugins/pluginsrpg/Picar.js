@@ -40,9 +40,9 @@ const handler = async (msg, { conn }) => {
   await conn.sendMessage(chatId, { react: { text: "⛏️", key: msg.key } });
 
   // Cargar DB
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  let db = fs.existsSync(sukirpgPath)
-    ? JSON.parse(fs.readFileSync(sukirpgPath))
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  let db = fs.existsSync(blackcloverrpgPath)
+    ? JSON.parse(fs.readFileSync(blackcloverrpgPath))
     : {};
   db.usuarios = db.usuarios || [];
 
@@ -149,7 +149,7 @@ const handler = async (msg, { conn }) => {
   }
 
   // Guardar
-  fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
   // Mensaje — SOLO lo ganado + subidas, citando SIEMPRE al usuario
   const base = TEXTOS_PICAR[Math.floor(Math.random() * TEXTOS_PICAR.length)]

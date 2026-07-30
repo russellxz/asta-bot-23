@@ -24,7 +24,7 @@ const handler = async (msg, { conn, args }) => {
     return conn.sendMessage(chatId, { text: "✳️ Uso: *.unirme <ID del clan>*\nEj: *.unirme 1*", quoted: msg });
   }
 
-  const file = path.join(process.cwd(), "sukirpg.json");
+  const file = path.join(process.cwd(), "blackcloverrpg.json");
   const db = loadDB(file);
   db.usuarios = Array.isArray(db.usuarios) ? db.usuarios : [];
   db.clanes   = Array.isArray(db.clanes)   ? db.clanes   : [];

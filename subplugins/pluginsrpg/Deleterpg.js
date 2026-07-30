@@ -35,15 +35,15 @@ const handler = async (msg, { conn, args }) => {
     });
   }
 
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  if (!fs.existsSync(sukirpgPath)) {
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  if (!fs.existsSync(blackcloverrpgPath)) {
     return conn.sendMessage(chatId, {
       text: "❌ La base de datos RPG aún no existe.",
       quoted: msg
     });
   }
 
-  let db = JSON.parse(fs.readFileSync(sukirpgPath));
+  let db = JSON.parse(fs.readFileSync(blackcloverrpgPath));
   db.usuarios = db.usuarios || [];
   db.personajes = db.personajes || [];
 
@@ -71,7 +71,7 @@ const handler = async (msg, { conn, args }) => {
   }
 
   db.usuarios.splice(idx, 1);
-  fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
   await conn.sendMessage(chatId, {
     text: `✅ El registro RPG del usuario @${target} ha sido eliminado correctamente.\n🛒 Sus personajes han sido devueltos a la tienda.`,

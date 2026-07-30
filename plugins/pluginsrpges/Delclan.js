@@ -19,7 +19,7 @@ const handler = async (msg, { conn }) => {
   // reacción inicial
   await conn.sendMessage(chatId, { react: { text: "⏳", key: msg.key } });
 
-  const file = path.join(process.cwd(), "sukirpg.json");
+  const file = path.join(process.cwd(), "blackcloverrpg.json");
   if (!fs.existsSync(file)) {
     return conn.sendMessage(chatId, { text: "❌ La base de datos RPG aún no existe." }, { quoted: msg });
   }
@@ -119,7 +119,7 @@ Esta acción es permanente y eliminará todos sus miembros del clan.
           }
 
           // Releer DB
-          const file2 = path.join(process.cwd(), "sukirpg.json");
+          const file2 = path.join(process.cwd(), "blackcloverrpg.json");
           let db2 = loadDB(file2);
           db2.usuarios = Array.isArray(db2.usuarios) ? db2.usuarios : [];
           db2.clanes   = Array.isArray(db2.clanes)   ? db2.clanes   : [];

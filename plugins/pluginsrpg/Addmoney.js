@@ -31,15 +31,15 @@ const handler = async (msg, { conn, args }) => {
   const cantidad = parseInt(args[0]);
 
   // 📂 Cargar base de datos
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  if (!fs.existsSync(sukirpgPath)) {
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  if (!fs.existsSync(blackcloverrpgPath)) {
     return conn.sendMessage(chatId, {
       text: "❌ No existe la base de datos del RPG.",
       quoted: msg
     });
   }
 
-  const db = JSON.parse(fs.readFileSync(sukirpgPath, "utf-8"));
+  const db = JSON.parse(fs.readFileSync(blackcloverrpgPath, "utf-8"));
 
   if (!db.banco) {
     return conn.sendMessage(chatId, {
@@ -51,7 +51,7 @@ const handler = async (msg, { conn, args }) => {
   // 💳 Sumar al capital actual
   db.banco.montoTotal = (Number(db.banco.montoTotal) || 0) + cantidad;
 
-  fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
   // ✅ Confirmación
   await conn.sendMessage(chatId, {

@@ -49,10 +49,10 @@ const handler = async (msg, { conn, args }) => {
     ]
   };
 
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
   let data = {};
-  if (fs.existsSync(sukirpgPath)) {
-    data = JSON.parse(fs.readFileSync(sukirpgPath));
+  if (fs.existsSync(blackcloverrpgPath)) {
+    data = JSON.parse(fs.readFileSync(blackcloverrpgPath));
   }
 
   if (!data.personajes) data.personajes = [];
@@ -73,7 +73,7 @@ const handler = async (msg, { conn, args }) => {
   }
 
   data.personajes.push(personaje);
-  fs.writeFileSync(sukirpgPath, JSON.stringify(data, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(data, null, 2));
 
   const caption = `✅ *Personaje agregado exitosamente a la tienda*\n\n` +
                   `⚔️ *Nombre:* ${nombre.replace(/_/g, " ")}\n` +

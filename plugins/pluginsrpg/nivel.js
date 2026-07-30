@@ -18,8 +18,8 @@ const handler = async (msg, { conn }) => {
   const target = citado || numero;
 
   // Cargar base de datos
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  let db = fs.existsSync(sukirpgPath) ? JSON.parse(fs.readFileSync(sukirpgPath)) : {};
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  let db = fs.existsSync(blackcloverrpgPath) ? JSON.parse(fs.readFileSync(blackcloverrpgPath)) : {};
   if (!db.usuarios) db.usuarios = [];
 
   const user = db.usuarios.find(u => u.numero === target);

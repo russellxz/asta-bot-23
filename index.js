@@ -56,6 +56,18 @@ import { startWebServer } from "./webserver.js";
 import { limpiarRespuestaBoton } from "./disenos.js";
 import "./config.js";
 
+// ☘️ La base del RPG pasó a llamarse blackcloverrpg.json. Si en el servidor
+// todavía está la vieja con las partidas de los usuarios, se renombra sola
+// para no perder ni un dato. Solo ocurre una vez.
+try {
+  if (fs.existsSync("./sukirpg.json") && !fs.existsSync("./blackcloverrpg.json")) {
+    fs.renameSync("./sukirpg.json", "./blackcloverrpg.json");
+    console.log("☘️ Base del RPG migrada: sukirpg.json → blackcloverrpg.json");
+  }
+} catch (e) {
+  console.error("❌ No se pudo migrar la base del RPG:", e.message);
+}
+
 // 🌐 Prefijos personalizados desde prefijos.json o por defecto
 let defaultPrefixes = [".", "#"];
 const prefixPath = "./prefijos.json";

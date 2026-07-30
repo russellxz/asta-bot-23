@@ -42,9 +42,9 @@ const handler = async (msg, { conn, args }) => {
   const tiempoMS = unidad === "m" ? valor * 60 * 1000 : valor * 60 * 60 * 1000;
 
   // 📂 Editar solo el tiempo del banco
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  let db = fs.existsSync(sukirpgPath)
-    ? JSON.parse(fs.readFileSync(sukirpgPath))
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  let db = fs.existsSync(blackcloverrpgPath)
+    ? JSON.parse(fs.readFileSync(blackcloverrpgPath))
     : {};
 
   if (!db.banco) {
@@ -61,7 +61,7 @@ const handler = async (msg, { conn, args }) => {
     texto: tiempoInput
   };
 
-  fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
   await conn.sendMessage(chatId, {
     text:

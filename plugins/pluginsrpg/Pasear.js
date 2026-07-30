@@ -40,8 +40,8 @@ const handler = async (msg, { conn }) => {
   await conn.sendMessage(chatId, { react: { text: "🐾", key: msg.key } });
 
   // Cargar DB
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  let db = fs.existsSync(sukirpgPath) ? JSON.parse(fs.readFileSync(sukirpgPath, "utf-8")) : {};
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  let db = fs.existsSync(blackcloverrpgPath) ? JSON.parse(fs.readFileSync(blackcloverrpgPath, "utf-8")) : {};
   db.usuarios = Array.isArray(db.usuarios) ? db.usuarios : [];
 
   const usuario = db.usuarios.find(u => u.numero === numero);
@@ -152,7 +152,7 @@ const handler = async (msg, { conn }) => {
   usuario.pasearDiario.xp += xpOtorgada;
 
   // Guardar
-  fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
   // Mensaje final con texto aleatorio
   const nombreTexto = `${usuario.nombre} ${usuario.apellido}`.trim();

@@ -13,6 +13,10 @@ const RECENT_EVENT_TTL_MS = 8000;
 // ==== HELPERS LID/REAL ====
 const DIGITS = (s = "") => String(s || "").replace(/[^0-9]/g, "");
 
+// ☘️ Portadas de bienvenida y despedida (Black Clover)
+const IMG_BIENVENIDA = "https://cdn.russellxz.click/092f23f6.jpg";
+const IMG_DESPEDIDA = "https://cdn.russellxz.click/33213955.jpg";
+
 function isActive(value) {
   const v = String(value ?? "").trim().toLowerCase();
 
@@ -365,9 +369,9 @@ async function loadImageSafe(url, fallbackUrl) {
 }
 
 async function sendWelcomeImage(conn, chatId, perfilURL, caption, mentions) {
-  const fallbackAvatar = "https://cdn.russellxz.click/e72cc417.jpeg";
+  const fallbackAvatar = IMG_BIENVENIDA;
   const avatar = await loadImageSafe(perfilURL, fallbackAvatar);
-  const fondo = await loadImage("https://cdn.russellxz.click/7177383b.jpg");
+  const fondo = await loadImage(IMG_BIENVENIDA);
 
   const canvas = createCanvas(1080, 720);
   const ctx = canvas.getContext("2d");
@@ -393,9 +397,9 @@ async function sendWelcomeImage(conn, chatId, perfilURL, caption, mentions) {
 }
 
 async function sendByeImage(conn, chatId, perfilURL, caption, mentions) {
-  const fallbackAvatar = "https://cdn.russellxz.click/7177383b.jpg";
+  const fallbackAvatar = IMG_DESPEDIDA;
   const avatar = await loadImageSafe(perfilURL, fallbackAvatar);
-  const fondo = await loadImage("https://cdn.russellxz.click/bc842c44.jpg");
+  const fondo = await loadImage(IMG_DESPEDIDA);
 
   const canvas = createCanvas(1080, 720);
   const ctx = canvas.getContext("2d");
@@ -771,7 +775,7 @@ async function handleGroupParticipantsUpdate(conn, update) {
           conn,
           resolved.realJid || mentionId,
           chatId,
-          "https://cdn.russellxz.click/e72cc417.jpeg"
+          IMG_BIENVENIDA
         );
 
         if (bienvenidaPersonalizada) {
@@ -786,7 +790,7 @@ async function handleGroupParticipantsUpdate(conn, update) {
 
           if (modo === "video") {
             await conn.sendMessage(chatId, {
-              video: { url: "https://cdn.russellxz.click/8e968c1d.mp4" },
+              image: { url: IMG_BIENVENIDA },
               caption: `👋 ${mention}\n\n${mensaje}`,
               mentions: [mentionId]
             });
@@ -814,7 +818,7 @@ async function handleGroupParticipantsUpdate(conn, update) {
           conn,
           resolved.realJid || mentionId,
           chatId,
-          "https://cdn.russellxz.click/7177383b.jpg"
+          IMG_DESPEDIDA
         );
 
         if (despedidaPersonalizada) {
@@ -829,7 +833,7 @@ async function handleGroupParticipantsUpdate(conn, update) {
 
           if (modo === "video") {
             await conn.sendMessage(chatId, {
-              video: { url: "https://cdn.russellxz.click/6a4bd220.mp4" },
+              image: { url: IMG_DESPEDIDA },
               caption: `👋 ${mention}\n\n${mensaje}`,
               mentions: [mentionId]
             });

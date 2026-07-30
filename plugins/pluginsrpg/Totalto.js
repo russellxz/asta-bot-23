@@ -9,13 +9,13 @@ const handler = async (msg, { conn }) => {
   await conn.sendMessage(chatId, { react: { text: "📊", key: msg.key } });
 
   // Cargar DB
-  const dbPath = path.join(process.cwd(), "sukirpg.json");
+  const dbPath = path.join(process.cwd(), "blackcloverrpg.json");
   let db = {};
   try {
     db = fs.existsSync(dbPath) ? JSON.parse(fs.readFileSync(dbPath, "utf-8")) : {};
   } catch (e) {
     return conn.sendMessage(chatId, {
-      text: "❌ Error leyendo la base de datos (sukirpg.json).",
+      text: "❌ Error leyendo la base de datos (blackcloverrpg.json).",
     }, { quoted: msg });
   }
 

@@ -8,8 +8,8 @@ const handler = async (msg, { conn, args }) => {
 
   await conn.sendMessage(chatId, { react: { text: "🔄", key: msg.key } });
 
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  const db = fs.existsSync(sukirpgPath) ? JSON.parse(fs.readFileSync(sukirpgPath)) : {};
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  const db = fs.existsSync(blackcloverrpgPath) ? JSON.parse(fs.readFileSync(blackcloverrpgPath)) : {};
   db.usuarios = db.usuarios || [];
 
   const usuario = db.usuarios.find(u => u.numero === numero);
@@ -62,7 +62,7 @@ const handler = async (msg, { conn, args }) => {
   const seleccionada = usuario.mascotas.splice(index, 1)[0];
   usuario.mascotas.unshift(seleccionada);
 
-  fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
   await conn.sendMessage(chatId, {
     text: `✅ Ahora tu mascota principal es *${seleccionada.nombre}*.`,

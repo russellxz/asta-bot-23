@@ -25,11 +25,11 @@ function ordenarPorPrecioDesc(arr) {
 
 const runChecker = (conn) => {
   setInterval(async () => {
-    const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-    if (!fs.existsSync(sukirpgPath)) return;
+    const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+    if (!fs.existsSync(blackcloverrpgPath)) return;
 
     try {
-      const db = JSON.parse(fs.readFileSync(sukirpgPath, "utf-8")) || {};
+      const db = JSON.parse(fs.readFileSync(blackcloverrpgPath, "utf-8")) || {};
       db.usuarios = Array.isArray(db.usuarios) ? db.usuarios : [];
       db.banco = db.banco || null;
       if (!db.banco) return;
@@ -265,7 +265,7 @@ const runChecker = (conn) => {
       }
 
       if (huboCambios) {
-        fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+        fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
       }
     } catch (err) {
       console.error("❌ Error en checkPrestamosBanco:", err);

@@ -9,9 +9,9 @@ const handler = async (msg, { conn }) => {
 
   await conn.sendMessage(chatId, { react: { text: "📊", key: msg.key } });
 
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  const db = fs.existsSync(sukirpgPath)
-    ? JSON.parse(fs.readFileSync(sukirpgPath))
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  const db = fs.existsSync(blackcloverrpgPath)
+    ? JSON.parse(fs.readFileSync(blackcloverrpgPath))
     : { usuarios: [] };
 
   const usuario = (db.usuarios || []).find(u => u.numero === numero);
@@ -55,7 +55,7 @@ const handler = async (msg, { conn }) => {
   hab2.xp    = Number(hab2.xp)    || 0;
 
   // (Opcional) Persistir normalizaciones por si faltaban campos
-  try { fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2)); } catch {}
+  try { fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2)); } catch {}
 
   const texto =
     `🎭 *Tu Personaje Principal*\n\n` +

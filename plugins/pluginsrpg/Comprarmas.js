@@ -9,8 +9,8 @@ const handler = async (msg, { conn, args }) => {
 
   await conn.sendMessage(chatId, { react: { text: "🐾", key: msg.key } });
 
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  let db = fs.existsSync(sukirpgPath) ? JSON.parse(fs.readFileSync(sukirpgPath)) : {};
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  let db = fs.existsSync(blackcloverrpgPath) ? JSON.parse(fs.readFileSync(blackcloverrpgPath)) : {};
   if (!db.usuarios) db.usuarios = [];
   if (!db.mascotas) db.mascotas = [];
 
@@ -83,7 +83,7 @@ const handler = async (msg, { conn, args }) => {
   // Insertar como primera (principal)
   usuario.mascotas.unshift(nuevaMascota);
 
-  fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
   // Avatar del usuario
   let avatarURL = "https://cdn.russellxz.click/43f6a610.jpg";

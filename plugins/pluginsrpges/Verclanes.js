@@ -17,7 +17,7 @@ function num(n) {
 const handler = async (msg, { conn }) => {
   const chatId = msg.key.remoteJid;
 
-  const file = path.join(process.cwd(), "sukirpg.json");
+  const file = path.join(process.cwd(), "blackcloverrpg.json");
   const db = loadDB(file);
   db.clanes = Array.isArray(db.clanes) ? db.clanes : [];
   db.usuarios = Array.isArray(db.usuarios) ? db.usuarios : [];

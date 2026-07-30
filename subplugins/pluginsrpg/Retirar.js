@@ -17,8 +17,8 @@ const handler = async (msg, { conn, args }) => {
     });
   }
 
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  let db = fs.existsSync(sukirpgPath) ? JSON.parse(fs.readFileSync(sukirpgPath)) : {};
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  let db = fs.existsSync(blackcloverrpgPath) ? JSON.parse(fs.readFileSync(blackcloverrpgPath)) : {};
   if (!db.usuarios) db.usuarios = [];
 
   const user = db.usuarios.find(u => u.numero === numero);
@@ -39,7 +39,7 @@ const handler = async (msg, { conn, args }) => {
   // Actualizar saldo
   user.guardado -= amount;
   user.creditos += amount;
-  fs.writeFileSync(sukirpgPath, JSON.stringify(db, null, 2));
+  fs.writeFileSync(blackcloverrpgPath, JSON.stringify(db, null, 2));
 
   // Obtener avatar
   let avatarURL = "https://cdn.russellxz.click/43f6a610.jpg";

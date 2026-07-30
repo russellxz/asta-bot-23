@@ -9,8 +9,8 @@ const handler = async (msg, { conn }) => {
 
   await conn.sendMessage(chatId, { react: { text: "🐾", key: msg.key } });
 
-  const sukirpgPath = path.join(process.cwd(), "sukirpg.json");
-  const db = fs.existsSync(sukirpgPath) ? JSON.parse(fs.readFileSync(sukirpgPath)) : { usuarios: [] };
+  const blackcloverrpgPath = path.join(process.cwd(), "blackcloverrpg.json");
+  const db = fs.existsSync(blackcloverrpgPath) ? JSON.parse(fs.readFileSync(blackcloverrpgPath)) : { usuarios: [] };
 
   const usuario = (db.usuarios || []).find(u => u.numero === numero);
   if (!usuario) {

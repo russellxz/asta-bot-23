@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 const COOLDOWN_MS = 7 * 60 * 1000;
-const FILE = path.join(process.cwd(), "sukirpg.json");
+const FILE = path.join(process.cwd(), "blackcloverrpg.json");
 
 const load = () => fs.existsSync(FILE) ? JSON.parse(fs.readFileSync(FILE, "utf-8")) : { usuarios: [] };
 const save = (db) => fs.writeFileSync(FILE, JSON.stringify(db, null, 2));
