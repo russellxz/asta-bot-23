@@ -96,16 +96,20 @@ function subSessionDir(number) {
 }
 
 // ------------------------------------------------------------
-// Flag de "hosting de subbots": permite que OTROS usuarios (no el dueño)
-// se conecten como subbots a este bot principal. Se controla desde el
-// panel web. Guardado en ./subbot_hosting.json en la raíz del bot.
+// Flag de "hosting de subbots": controla la vinculación DESDE LA PÁGINA WEB.
+// Viene activado de fábrica y el dueño puede apagarlo desde el panel.
+// El comando .code de WhatsApp no pasa por aquí: siempre está abierto.
+// Guardado en ./subbot_hosting.json en la raíz del bot.
 // ------------------------------------------------------------
 const HOSTING_FILE = path.resolve("./subbot_hosting.json");
 
 export function getSubbotHosting() {
   const data = readJson(HOSTING_FILE, null);
-  // Por defecto DESACTIVADO: el dueño elige si activarlo desde el panel web.
-  if (!data || typeof data.enabled === "undefined") return false;
+  // Por defecto ACTIVADO: nadie tiene que ir al panel web a habilitarlo.
+  // El dueño puede apagarlo desde ahí si algún día quiere cerrar el hosting,
+  // pero eso solo afecta a la vinculación desde la web: el comando .code de
+  // WhatsApp está siempre abierto.
+  if (!data || typeof data.enabled === "undefined") return true;
   return !!data.enabled;
 }
 
@@ -2186,21 +2190,9 @@ export async function handleCodeCommand(msg, { conn, args, botName = "Black Clov
     (Array.isArray(global.prefixes) && global.prefixes[0]) ||
     ".";
 
-  // 🔒 Si el hosting de subbots está desactivado, solo el dueño del bot
-  // (o el propio bot) puede conectar subbots. Los demás quedan bloqueados.
-  if (!conn.isSubbot && !getSubbotHosting()) {
-    const fromMe = !!msg.key.fromMe;
-    const senderNum = DIGITS(msg.realJid || msg.key.participant || msg.key.remoteJid || "");
-    const isOwner = fromMe ||
-      (typeof global.isOwner === "function" && senderNum && global.isOwner(senderNum));
-    if (!isOwner) {
-      return conn.sendMessage(
-        chatId,
-        { text: "🚫 Este bot no está aceptando nuevos subbots por ahora.\nEl dueño puede activarlo desde el panel web." },
-        { quoted: msg }
-      );
-    }
-  }
+  // ☘️ Vinculación abierta: cualquiera puede conectarse como subbot con
+  // .code desde WhatsApp, sin depender de que el hosting esté activado
+  // en el panel web.
 
   const raw = (args || []).join(" ").trim();
   let digits = DIGITS(raw);
