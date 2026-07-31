@@ -50,7 +50,7 @@ const handler = async (msg, { conn, args, text }) => {
 
     const metadata = {
       packname: `✨ Emoji Animado: ${senderName}`,
-      author: `🤖 Azura Ultra\n🛠️ Russell xz 💻\n${fechaCreacion}`,
+      author: `🤖 Azura Ultra\n🛠️ THE CARLOS 💻\n${fechaCreacion}`,
       categories: [emoji]
     };
 

@@ -246,15 +246,15 @@ Un comando y ya eres parte del escuadrón. También responde a `serbot`, `jadibo
 
 <br/>
 
-## 👑 Créditos
+## 👑 Creador
 
-Creado y mantenido por **Russell XZ**.
+<div align="center">
 
-Gracias a quienes han apoyado el proyecto:
+[![THE CARLOS](https://img.shields.io/badge/☘️%20CREADO%20POR%20THE%20CARLOS%20☘️-00E676?style=for-the-badge&labelColor=0B0B0B)](#)
 
-[![Zastinian](https://img.shields.io/badge/Zastinian-0B0B0B?style=flat-square&logo=github&logoColor=00E676)](https://github.com/Zastinian)
-[![DIEGO-OFC](https://img.shields.io/badge/DIEGO--OFC-0B0B0B?style=flat-square&logo=github&logoColor=00E676)](https://github.com/DIEGO-OFC2)
-[![ds6](https://img.shields.io/badge/ds6-0B0B0B?style=flat-square&logo=github&logoColor=00E676)](https://github.com/ds6)
+**Black Clover Bot** fue creado y es mantenido por **THE CARLOS**.
+
+</div>
 
 <br/>
 

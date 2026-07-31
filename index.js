@@ -238,7 +238,7 @@ const bannerRGB = (texto, { cuadros = 26, ms = 55, subtitulo = "" } = {}) => {
 };
 
 // 🎨 Banner (ya con TODO cargado)
-bannerRGB("BLACK CLOVER", { subtitulo: "   ☘️  B L A C K   C L O V E R   B O T  ☘️   ·   by Russell XZ" });
+bannerRGB("BLACK CLOVER", { subtitulo: "   ☘️  B L A C K   C L O V E R   B O T  ☘️   ·   by THE CARLOS" });
 console.log(
   chalk.green(`✅ ${global.plugins.length} plugins del bot principal y ` +
     `${(global.subPlugins || []).length} de subbots cargados.\n`)

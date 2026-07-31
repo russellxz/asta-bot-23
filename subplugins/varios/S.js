@@ -81,7 +81,7 @@ const handler = async (msg, { conn, wa }) => {
 
     const metadata = {
       packname: `✨ Lo Mandó Hacer: ${senderName}`,
-      author: `🦋Bot Creador: ☘️ Black Clover Bot ☘️\n🛠️ Desarrollado por: Russell XZ 💻\n📅 ${fechaStr}`,
+      author: `🦋Bot Creador: ☘️ Black Clover Bot ☘️\n🛠️ Desarrollado por: THE CARLOS 💻\n📅 ${fechaStr}`,
     };
 
     const outSticker =
