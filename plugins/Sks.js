@@ -471,7 +471,7 @@ async function procesarEfecto(conn, job, effectKey, triggerMsg) {
 
     const metadata = {
       packname: `✨ ${efecto.label} — ${senderName}`,
-      author: `🦋 Bot Creador: ☘️ Black Clover Bot ☘️\n🎨 Efecto: ${efecto.label}\n🛠️ Desarrollado por: Russell XZ 💻\n📅 ${fechaStr}`,
+      author: `🦋 Bot Creador: ☘️ Black Clover Bot ☘️\n🎨 Efecto: ${efecto.label}\n🛠️ Desarrollado por: THE CARLOS 💻\n📅 ${fechaStr}`,
     };
 
     let webpBuffer;
