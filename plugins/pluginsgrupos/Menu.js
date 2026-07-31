@@ -121,7 +121,7 @@ const handler = async (msg, { conn }) => {
   });
 };
 
-handler.command = ["menu"];
+handler.command = ["menu", "menú", "help"];
 handler.help = ["menu"];
 handler.tags = ["menu"];
 

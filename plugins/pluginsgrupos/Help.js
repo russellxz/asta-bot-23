@@ -35,7 +35,7 @@ https://youtube.com/@skyultraplus?si=4hnO5biMvrUu9JXY
   }, { quoted: msg });
 };
 
-handler.command = ['info', 'help'];
+handler.command = ['info'];
 handler.tags = ['info'];
 handler.help = ['info'];
 handler.register = true;
